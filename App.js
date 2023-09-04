@@ -15,6 +15,12 @@ AFRAME.registerComponent("markerhandler", {
             botaoCobra.style.display = "none";
         });
 
+        markerCachorro.addEventListener("markerLost", function () {
+            // Marcador do Cachorro perdido, ocultar o botão do Cachorro
+            botaoCachorro.style.display = "none";
+        });
+        
+
         markerCrocodilo.addEventListener("markerFound", function () {
             // Marcador do Crocodilo detectado, exibir o botão do Crocodilo
             botaoCrocodilo.style.display = "block";
@@ -22,11 +28,21 @@ AFRAME.registerComponent("markerhandler", {
             botaoCobra.style.display = "none";
         });
 
+        markerCrocodilo.addEventListener("markerLost", function () {
+            // Marcador do Cachorro perdido, ocultar o botão do Cachorro
+            botaoCrocodilo.style.display = "none";
+        });
+
         markerCobra.addEventListener("markerFound", function () {
             // Marcador do Cobra detectado, exibir o botão do Cobra
             botaoCobra.style.display = "block";
             botaoCrocodilo.style.display = "none"; // Ocultar o botão do Crocodilo
             botaoCachorro.style.display = "none"; // Ocultar o botão do Cachorro
+        });
+
+        markerCobra.addEventListener("markerLost", function () {
+            // Marcador do Cachorro perdido, ocultar o botão do Cachorro
+            botaoCobra.style.display = "none";
         });
 
         // Evento de clique no botão do Cachorro
