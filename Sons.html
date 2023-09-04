@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Example</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <link rel="stylesheet" type="text/css" href="./estilos/style.css">
+    <script src="./App.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+    <audio id="dog-sound">
+        <source src="./sons/dog.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="kro-sound">
+        <source src="./sons/Kro.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="snake-sound">
+        <source src="./sons/snake.mp3" type="audio/mpeg">
+    </audio>
+    <a-scene embedded arjs="debugUIEnabled:false;" markerhandler>
+        <a-assets>
+            <a-assets-item id="dog-model" src="./arquivos 3d/dog.glb"></a-assets-item>
+            <a-assets-item id="kro-model" src="./arquivos 3d/Sar.glb"></a-assets-item>
+            <a-assets-item id="snake-model" src="./arquivos 3d/Snake.glb"></a-assets-item>
+        </a-assets> 
+        <!-- Marcador para o Cachorro -->
+        <a-marker type="pattern" url="./marcadores/blue.patt" id="marker-cachorro">
+            <a-entity 
+                id="modelodog"       
+                scale="10 10 10"
+                gltf-model="#dog-model"
+            ></a-entity>
+        </a-marker>
+        <!-- Marcador para o Crocodilo -->
+        <a-marker type="pattern" url="./marcadores/yellow.patt" id="marker-crocodilo">
+            <a-entity 
+                id="modelokro"       
+                scale="5 5 5"
+                gltf-model="#kro-model"
+            ></a-entity>
+        </a-marker>
+         <!-- Marcador para o Cobra -->
+         <a-marker type="pattern" url="./marcadores/purple.patt" id="marker-cobra">
+            <a-entity 
+                id="modelosanke"       
+                scale="12 10 10"
+                gltf-model="#snake-model"
+            ></a-entity>
+        </a-marker>
+        <a-entity camera></a-entity>
+    </a-scene>
+    <!-- Botão HTML separado -->
+    <div class="butto">
+        <button id="botao-cachorro" class="botao">Clique no Cachorro!</button>
+        <button id="botao-crocodilo" class="botao" >Clique no Crocodilo!</button>
+        <button id="botao-cobra" class="botao" >Clique na Cobra!</button>
+    </div>  
+</body>
+</html>
