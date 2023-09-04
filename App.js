@@ -12,12 +12,14 @@ AFRAME.registerComponent("markerhandler", {
             // Marcador do Cachorro detectado, exibir o botão do Cachorro
             botaoCachorro.style.display = "block";
             botaoCrocodilo.style.display = "none"; // Ocultar o botão do Crocodilo
+            botaoCobra.style.display = "none";
         });
 
         markerCrocodilo.addEventListener("markerFound", function () {
             // Marcador do Crocodilo detectado, exibir o botão do Crocodilo
             botaoCrocodilo.style.display = "block";
             botaoCachorro.style.display = "none"; // Ocultar o botão do Cachorro
+            botaoCobra.style.display = "none";
         });
 
         markerCobra.addEventListener("markerFound", function () {
