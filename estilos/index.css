@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column; /* Para usar o sticky footer */
     min-height: 100vh; /* Preenche a altura da viewport */
-    background-image: url(on.jpg);
+    background-image: url(./on.jpg);
     background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
     background-position: center center; /* Centraliza a imagem vertical e horizontalmente */
     background-repeat: no-repeat; /* Evita repetição da imagem */
@@ -17,7 +17,7 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding:140px; /* Alterado para 40px para dispositivos móveis */
+    padding: 125px;
     box-sizing: border-box;
 }
 
@@ -26,32 +26,33 @@ body {
     flex: 1; /* Cresce para preencher o espaço disponível */
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px; /* Alterado para 20px para dispositivos móveis */
+    padding: 40px;
     box-sizing: border-box;
 }
 
 h1 {
     color: #007bff;
-    font-size: 28px; /* Alterado o tamanho da fonte */
-    margin-bottom: 15px; /* Alterado o espaçamento inferior */
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
 p {
     color: #666;
-    font-size: 16px; /* Alterado o tamanho da fonte */
-    margin-bottom: 15px; /* Alterado o espaçamento inferior */
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .instruction-link {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    color: #007bff; /* Cor do link */
+    text-decoration: none; /* Remova a sublinhado padrão */
+    font-weight: bold; /* Torne o texto em negrito */
+    transition: color 0.3s ease; /* Efeito de transição de cor suave */
 }
 
 .instruction-link:hover {
-    color: #0056b3;
+    color: #0056b3; /* Cor diferente ao passar o mouse sobre o link */
 }
+
 
 /* Estilos para o botão */
 .button {
@@ -78,13 +79,17 @@ p {
     width: 100%;
     background-color: #333;
     color: #fff;
+   
     text-align: center;
 }
 
 .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 800px;
     margin: 0 auto;
-    padding: 10px; /* Alterado o preenchimento para dispositivos móveis */
+    padding: 0 20px;
 }
 
 /* Estilos para os links no rodapé */
@@ -102,3 +107,4 @@ p {
     color: #fff;
     text-decoration: none;
 }
+
