@@ -8,12 +8,16 @@ body {
     display: flex;
     flex-direction: column; /* Para usar o sticky footer */
     min-height: 100vh; /* Preenche a altura da viewport */
+    background-image: url(on.jpg);
+    background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
+    background-position: center center; /* Centraliza a imagem vertical e horizontalmente */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 125px;
+    padding:140px; /* Alterado para 40px para dispositivos móveis */
     box-sizing: border-box;
 }
 
@@ -22,20 +26,31 @@ body {
     flex: 1; /* Cresce para preencher o espaço disponível */
     max-width: 800px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 20px; /* Alterado para 20px para dispositivos móveis */
     box-sizing: border-box;
 }
 
 h1 {
     color: #007bff;
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 28px; /* Alterado o tamanho da fonte */
+    margin-bottom: 15px; /* Alterado o espaçamento inferior */
 }
 
 p {
     color: #666;
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 16px; /* Alterado o tamanho da fonte */
+    margin-bottom: 15px; /* Alterado o espaçamento inferior */
+}
+
+.instruction-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.instruction-link:hover {
+    color: #0056b3;
 }
 
 /* Estilos para o botão */
@@ -63,17 +78,13 @@ p {
     width: 100%;
     background-color: #333;
     color: #fff;
-   
     text-align: center;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 10px; /* Alterado o preenchimento para dispositivos móveis */
 }
 
 /* Estilos para os links no rodapé */
@@ -91,4 +102,3 @@ p {
     color: #fff;
     text-decoration: none;
 }
-
