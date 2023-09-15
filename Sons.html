@@ -15,6 +15,7 @@
             <a-assets-item id="dog-model" src="./arquivos 3d/dog.glb"></a-assets-item>
             <a-assets-item id="kro-model" src="./arquivos 3d/Sar.glb"></a-assets-item>
             <a-assets-item id="snake-model" src="./arquivos 3d/Snake.glb"></a-assets-item>
+            <a-assets-item id="cat-model" src="./arquivos 3d/cat.glb"></a-assets-item>
         </a-assets> 
         <!-- Marcador para o Cachorro -->
         <a-marker type="pattern" url="./marcadores/blue.patt" id="marker-cachorro">
@@ -44,6 +45,15 @@
                 gltf-model="#snake-model"
             ></a-entity>
         </a-marker>
+        <!-- Marcador para o Gato -->
+        <a-marker type="pattern" url="./marcadores/orange.patt" id="marker-cat">
+            <a-entity 
+                id="modelocat"  
+                rotation="-60 30 30"     
+                scale="1 1 1"
+                gltf-model="#cat-model"
+            ></a-entity>
+        </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
 
@@ -57,10 +67,14 @@
     <audio id="snake-sound">
         <source src="./sons/snake.mp3" type="audio/mpeg">
     </audio>
+    <audio id="cat-sound">
+        <source src="./sons/cat.mp3" type="audio/mpeg">
+    </audio>
     <div class="butto">
         <button id="botao-cachorro" class="botao">Som do Cachorro!</button>
         <button id="botao-crocodilo" class="botao" >Som do Crocodilo!</button>
         <button id="botao-cobra" class="botao" >Som da Cobra!</button>
+        <button id="botao-cat" class="botao" >Som do Gato!</button>
     </div>  
 </body>
 </html>
