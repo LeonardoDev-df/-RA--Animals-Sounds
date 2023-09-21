@@ -16,9 +16,11 @@
             <a-assets-item id="kro-model" src="./arquivos 3d/Sar.glb"></a-assets-item>
             <a-assets-item id="snake-model" src="./arquivos 3d/Snake.glb"></a-assets-item>
             <a-assets-item id="cat-model" src="./arquivos 3d/cat.glb"></a-assets-item>
+            <a-assets-item id="rino-model" src="./arquivos 3d/rhino.glb"></a-assets-item>
+            <a-assets-item id="golfi-model" src="./arquivos 3d/dolphin.glb"></a-assets-item>
         </a-assets> 
         <!-- Marcador para o Cachorro -->
-        <a-marker type="pattern" url="./marcadores/blue.patt" id="marker-cachorro">
+        <a-marker type="pattern" url="./marcadores/purple.patt" id="marker-cachorro">
             <a-entity 
                 id="modelodog"
                 position="0.2 0.2 0.1"       
@@ -28,7 +30,7 @@
             ></a-entity>
         </a-marker>
         <!-- Marcador para o Crocodilo -->
-        <a-marker type="pattern" url="./marcadores/yellow.patt" id="marker-crocodilo">
+        <a-marker type="pattern" url="./marcadores/blue.patt" id="marker-crocodilo">
             <a-entity 
                 id="modelokro" 
                 rotation="-30 20 50"      
@@ -54,6 +56,28 @@
                 gltf-model="#cat-model"
             ></a-entity>
         </a-marker>
+         <!-- Marcador para o Golfinho -->
+         <a-marker type="pattern" url="./marcadores/blue.patt" id="marker-golfi">
+            <a-entity 
+                id="modelogolfi"  
+                scale="25 25 25"
+                position="-0.2 -0.5 -0.1"       
+                rotation="-30 30 50"
+              
+                gltf-model="#golfi-model"
+            ></a-entity>
+        </a-marker>
+         <!-- Marcador para o Rinoceronte -->
+         <a-marker type="pattern" url="./marcadores/yellow.patt" id="marker-rino">
+            <a-entity 
+                id="modelorino"  
+                position="0.2 0.2 0.1"       
+                rotation="-30 20 50"
+                scale="15 15 15"
+               
+                gltf-model="#rino-model"
+            ></a-entity>
+        </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
 
@@ -70,11 +94,22 @@
     <audio id="cat-sound">
         <source src="./sons/cat.mp3" type="audio/mpeg">
     </audio>
+    <audio id="leopard-sound">
+        <source src="./sons/cat.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="rino-sound">
+        <source src="./sons/Rino.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="golfi-sound">
+        <source src="./sons/golfi.mp3" type="audio/mpeg">
+    </audio>
     <div class="butto">
         <button id="botao-cachorro" class="botao">Som do Cachorro!</button>
         <button id="botao-crocodilo" class="botao" >Som do Crocodilo!</button>
         <button id="botao-cobra" class="botao" >Som da Cobra!</button>
         <button id="botao-cat" class="botao" >Som do Gato!</button>
+        <button id="botao-golfi" class="botao" >Som do Golfinho!</button>
+        <button id="botao-rino" class="botao" >Som do Rinoceronte!</button>
     </div>  
 </body>
 </html>
