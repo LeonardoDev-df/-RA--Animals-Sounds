@@ -14,14 +14,14 @@
     <a-scene embedded arjs="debugUIEnabled:false;" markerhandler>
         <a-assets>
             <a-assets-item id="dog-model" src="./arquivos 3d/dog.glb"></a-assets-item>
-            <a-assets-item id="kro-model" src="./arquivos 3d/Sar.glb"></a-assets-item>
+            <a-assets-item id="kro-model" src="./arquivos 3d/panter.glb"></a-assets-item>
             <a-assets-item id="snake-model" src="./arquivos 3d/Snake.glb"></a-assets-item>
             <a-assets-item id="cat-model" src="./arquivos 3d/cat.glb"></a-assets-item>
             <a-assets-item id="rino-model" src="./arquivos 3d/rhino.glb"></a-assets-item>
             <a-assets-item id="golfi-model" src="./arquivos 3d/dolphin.glb"></a-assets-item>
         </a-assets> 
         <!-- Marcador para o Cachorro -->
-        <a-marker type="pattern" url="./marcadores/purple.patt" id="marker-cachorro">
+        <a-marker type="pattern" url="./marcadores/" id="marker-cachorro">
             <a-entity 
                 id="modelodog"
                 position="0.2 0.2 0.1"       
@@ -58,7 +58,7 @@
             ></a-entity>
         </a-marker>
          <!-- Marcador para o Golfinho -->
-         <a-marker type="pattern" url="./marcadores/" id="marker-golfi">
+         <a-marker type="pattern" url="./marcadores/purple.patt" id="marker-golfi">
             <a-entity 
                 id="modelogolfi"  
                 scale="25 25 25"
