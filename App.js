@@ -27,6 +27,7 @@ AFRAME.registerComponent("markerhandler", {
         markerCachorro.addEventListener("markerLost", function () {
             // Marcador do Cachorro perdido, ocultar o botão do Cachorro
             botaoCachorro.style.display = "none";
+            soundEl.pause();
         });
         
 
@@ -41,6 +42,7 @@ AFRAME.registerComponent("markerhandler", {
         markerCrocodilo.addEventListener("markerLost", function () {
             // Marcador do Cachorro perdido, ocultar o botão do Cachorro
             botaoCrocodilo.style.display = "none";
+            soundEl.pause();
         });
 
         markerCobra.addEventListener("markerFound", function () {
@@ -54,6 +56,7 @@ AFRAME.registerComponent("markerhandler", {
         markerCobra.addEventListener("markerLost", function () {
             // Marcador do Cachorro perdido, ocultar o botão do Cachorro
             botaoCobra.style.display = "none";
+            soundEl.pause();
         });
 
         markerCat.addEventListener("markerFound", function () {
@@ -68,6 +71,7 @@ AFRAME.registerComponent("markerhandler", {
         markerCat.addEventListener("markerLost", function () {
             // Marcador do Cachorro perdido, ocultar o botão do Cachorro
             botaoCat.style.display = "none";
+            soundEl.pause();
         });
 
 
@@ -84,6 +88,7 @@ AFRAME.registerComponent("markerhandler", {
         markerGolfi.addEventListener("markerLost", function () {
             // Marcador do Cachorro perdido, ocultar o botão do Cachorro
             botaoGolfi.style.display = "none";
+            soundEl.pause();
         });
 
         markerRino.addEventListener("markerFound", function () {
@@ -100,10 +105,12 @@ AFRAME.registerComponent("markerhandler", {
         markerRino.addEventListener("markerLost", function () {
             // Marcador do Cachorro perdido, ocultar o botão do Cachorro
             botaoRino.style.display = "none";
+            soundEl.pause();
         });
         markerCobra.addEventListener("markerLost", function () {
             // Marcador do Cachorro perdido, ocultar o botão do Cachorro
             botaoCat.style.display = "none";
+            soundEl.pause();
         });
 
         // Evento de clique no botão do Cachorro
