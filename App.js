@@ -1,6 +1,7 @@
 // Eventos para quando os marcadores são detectados
 AFRAME.registerComponent("markerhandler", {
     init: function () {
+        //marcador
         const markerCachorro = document.getElementById("marker-cachorro");
         const markerCrocodilo = document.getElementById("marker-crocodilo");
         const markerCobra = document.getElementById("marker-cobra");
@@ -8,13 +9,16 @@ AFRAME.registerComponent("markerhandler", {
         const markerGolfi = document.getElementById("marker-golfi");
         const markerRino = document.getElementById("marker-rino");
 
-
+        //botão
         const botaoCachorro = document.getElementById("botao-cachorro");
         const botaoCrocodilo = document.getElementById("botao-crocodilo");
         const botaoCobra = document.getElementById("botao-cobra");
         const botaoCat = document.getElementById("botao-cat");
         const botaoGolfi = document.getElementById("botao-golfi");
         const botaoRino = document.getElementById("botao-rino");
+
+        //div 
+        const divCroc = document.getElementById("div-croc");
 
         markerCachorro.addEventListener("markerFound", function () {
             // Marcador do Cachorro detectado, exibir o botão do Cachorro
@@ -34,14 +38,16 @@ AFRAME.registerComponent("markerhandler", {
         markerCrocodilo.addEventListener("markerFound", function () {
             // Marcador do Crocodilo detectado, exibir o botão do Crocodilo
             botaoCrocodilo.style.display = "block";
+            divCroc.style.display = "block";
             botaoCachorro.style.display = "none"; // Ocultar o botão do Cachorro
             botaoCobra.style.display = "none";
             botaoGolfi.style.display = "none";
         });
 
         markerCrocodilo.addEventListener("markerLost", function () {
-            // Marcador do Cachorro perdido, ocultar o botão do Cachorro
+            // Marcador do Crocodilo perdido, ocultar o botão do Crocodilo
             botaoCrocodilo.style.display = "none";
+            divCroc.style.display = "none";
             soundEl.pause();
         });
 
