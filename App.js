@@ -49,7 +49,7 @@ AFRAME.registerComponent("markerhandler", {
         markerCrocodilo.addEventListener("markerFound", function () {
             // Marcador do Crocodilo detectado, exibir o botão do Crocodilo
             botaoCrocodilo.style.display = "block";
-            CrocodiloDoubt.style.display = "block";
+            //CrocodiloDoubt.style.display = "block";
             divCroc.style.display = "none";
             botaoCachorro.style.display = "none"; // Ocultar o botão do Cachorro
             botaoCobra.style.display = "none";
