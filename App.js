@@ -12,6 +12,7 @@ AFRAME.registerComponent("markerhandler", {
         //botão
         const botaoCachorro = document.getElementById("botao-cachorro");
         const botaoCrocodilo = document.getElementById("botao-crocodilo");
+        const CrocodiloDoubt = document.getElementById("crocodilo-doubt");
         const botaoCobra = document.getElementById("botao-cobra");
         const botaoCat = document.getElementById("botao-cat");
         const botaoGolfi = document.getElementById("botao-golfi");
@@ -20,17 +21,7 @@ AFRAME.registerComponent("markerhandler", {
          //div 
          const divCroc = document.getElementById("div-croc");
 
-        const CrocodiloDoubt = document.getElementById("crocodilo-doubt");
-
-        // Evento de clique no botão do Crocodilo
-        CrocodiloDoubt.addEventListener("click", function () {
-            alert("Crocodilo Clicado!");
-            divCroc.style.display = "block";
-            
-        });
-
-       
-
+    
         markerCachorro.addEventListener("markerFound", function () {
             // Marcador do Cachorro detectado, exibir o botão do Cachorro
             botaoCachorro.style.display = "block";
@@ -49,7 +40,7 @@ AFRAME.registerComponent("markerhandler", {
         markerCrocodilo.addEventListener("markerFound", function () {
             // Marcador do Crocodilo detectado, exibir o botão do Crocodilo
             botaoCrocodilo.style.display = "block";
-            //CrocodiloDoubt.style.display = "block";
+            CrocodiloDoubt.style.display = "block";
             divCroc.style.display = "none";
             botaoCachorro.style.display = "none"; // Ocultar o botão do Cachorro
             botaoCobra.style.display = "none";
@@ -147,6 +138,13 @@ AFRAME.registerComponent("markerhandler", {
             if (soundEl) {
                 soundEl.play();
             }
+        });
+
+         // Evento de clique no botão do Crocodilo
+         CrocodiloDoubt.addEventListener("click", function () {
+            alert("Crocodilo Clicado!");
+            divCroc.style.display = "block";
+            
         });
 
          // Evento de clique no botão do Cobra
