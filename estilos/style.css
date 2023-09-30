@@ -38,7 +38,19 @@
     height: 6em;
 }
 
-.doubt {
+.nodo {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    top: 55%;
+}
+
+.doubt{
     background-image:url("../images/croco.jpg");
     background-image: 10px;
     background-position: 10% 40%; 
