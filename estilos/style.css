@@ -46,7 +46,7 @@
     background-position:  center;
     background-size: 100px; 
     top: 180px;
-    display: none;
+    display: block;
     padding: 0.45em;
     border-radius: 4px;
     margin-left: -115%;
