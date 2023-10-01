@@ -26,7 +26,6 @@ AFRAME.registerComponent("markerhandler", {
 
          // Evento de clique no botão do Crocodilo
          inputCroc.addEventListener("click", function () {
-            alert("Crocodilo Clicado!");
             divCroc.style.display = "block";
         });
 
@@ -60,6 +59,7 @@ AFRAME.registerComponent("markerhandler", {
         markerCrocodilo.addEventListener("markerLost", function () {
             // Marcador do Crocodilo perdido, ocultar o botão do Crocodilo
             botaoCrocodilo.style.display = "none";
+            inputCroc.style.display = "none";
             divCroc.style.display = "none";
             soundEl.pause();
         });
