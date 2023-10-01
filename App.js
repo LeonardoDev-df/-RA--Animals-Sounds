@@ -20,6 +20,17 @@ AFRAME.registerComponent("markerhandler", {
 
          //div 
          const divCroc = document.getElementById("div-croc");
+        
+        //input 
+        const inputCroc = document.getElementById("input-croc");
+
+         // Evento de clique no botão do Crocodilo
+         inputCroc.addEventListener("click", function () {
+            alert("Crocodilo Clicado!");
+            divCroc.style.display = "block";
+        });
+
+        
 
     
         markerCachorro.addEventListener("markerFound", function () {
@@ -40,8 +51,7 @@ AFRAME.registerComponent("markerhandler", {
         markerCrocodilo.addEventListener("markerFound", function () {
             // Marcador do Crocodilo detectado, exibir o botão do Crocodilo
             botaoCrocodilo.style.display = "block";
-           // CrocodiloDoubt.style.display = "block";
-            divCroc.style.display = "block";
+            inputCroc.style.display = "block";
             botaoCachorro.style.display = "none"; // Ocultar o botão do Cachorro
             botaoCobra.style.display = "none";
             botaoGolfi.style.display = "none";

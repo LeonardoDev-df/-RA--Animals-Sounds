@@ -44,6 +44,20 @@
     height: 6em;
 }
 
+.input-croc{
+    position: absolute;
+    top: 90px;
+    margin-left: 30px;
+    display: none;
+    padding: 0.45em;
+    border-radius: 4px;
+    border: none;
+    background: rgb(17, 149, 182);
+    color: rgb(245, 245, 245);
+    width: 14em;
+    height: 6em;
+}
+
 .div-croc{
     position: absolute;
     top: 90px;
