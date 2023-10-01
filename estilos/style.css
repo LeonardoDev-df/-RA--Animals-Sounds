@@ -77,3 +77,36 @@
     height: 6em;
 }
 
+
+.input-snake{
+    position: absolute;
+    background-image:url("../images/Doubt.jpg");
+    background-image: 10px;
+    background-position: 10% 40%; 
+    background-repeat: no-repeat, repeat-x;
+    background-position:  center;
+    background-size: 70px; 
+    top: 150px;
+    margin-left: -530px;
+    display: none;
+    padding: 0.45em;
+    border-radius: 4px;
+    border: none;
+    width: 5em;
+    height: 6em;
+}
+
+.div-snake{
+    position: absolute;
+    top: 150px;
+    margin-left: 530px;
+    text-align: justify;
+    display: none;
+    padding: 0.45em;
+    border-radius: 4px;
+    border: none;
+    background: rgb(17, 149, 182);
+    color: rgb(245, 245, 245);
+    width: 11em;
+    height: 6em;
+}

@@ -20,15 +20,22 @@ AFRAME.registerComponent("markerhandler", {
 
          //div 
          const divCroc = document.getElementById("div-croc");
+         const divSnake = document.getElementById("div-snake");
         
         //input 
         const inputCroc = document.getElementById("input-croc");
+        const inputSnake = document.getElementById("input-snake");
 
-         // Evento de clique no botão do Crocodilo
+         // Evento de clique no botão do dúvida Crocodilo
          inputCroc.addEventListener("click", function () {
             divCroc.style.display = "block";
         });
 
+
+         // Evento de clique no botão do dúvida Cobra
+         inputSnake.addEventListener("click", function () {
+            divSnake.style.display = "block";
+        });
         
 
     
@@ -67,6 +74,7 @@ AFRAME.registerComponent("markerhandler", {
         markerCobra.addEventListener("markerFound", function () {
             // Marcador do Cobra detectado, exibir o botão do Cobra
             botaoCobra.style.display = "block";
+            inputSnake.style.display = "block";
             botaoCrocodilo.style.display = "none"; // Ocultar o botão do Crocodilo
             botaoCachorro.style.display = "none"; // Ocultar o botão do Cachorro
             botaoGolfi.style.display = "none";
@@ -75,6 +83,8 @@ AFRAME.registerComponent("markerhandler", {
         markerCobra.addEventListener("markerLost", function () {
             // Marcador do Cachorro perdido, ocultar o botão do Cachorro
             botaoCobra.style.display = "none";
+            inputSnake.style.display = "none";
+            divSnake.style.display = "none";
             soundEl.pause();
         });
 
