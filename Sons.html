@@ -14,23 +14,12 @@
     
     <a-scene embedded arjs="debugUIEnabled:false;" markerhandler>
         <a-assets>
-            <a-assets-item id="dog-model" src="./arquivos 3d/dog.glb"></a-assets-item>
             <a-assets-item id="kro-model" src="./arquivos 3d/Sar.glb"></a-assets-item>
             <a-assets-item id="snake-model" src="./arquivos 3d/Snake.glb"></a-assets-item>
-            <a-assets-item id="cat-model" src="./arquivos 3d/cat.glb"></a-assets-item>
-            <a-assets-item id="rino-model" src="./arquivos 3d/rhino.glb"></a-assets-item>
             <a-assets-item id="golfi-model" src="./arquivos 3d/dolphin.glb"></a-assets-item>
+            <a-assets-item id="panter-model" src="./arquivos 3d/panter.glb"></a-assets-item>
         </a-assets> 
-        <!-- Marcador para o Cachorro -->
-        <a-marker type="pattern" url="./marcadores/" id="marker-cachorro">
-            <a-entity 
-                id="modelodog"
-                position="0.2 0.2 0.1"       
-                rotation="-30 20 50"
-                scale="15 15 15"
-                gltf-model="#dog-model"
-            ></a-entity>
-        </a-marker>
+       
         <!-- Marcador para o Crocodilo -->
         <a-marker type="pattern" url="./marcadores/blue.patt" id="marker-crocodilo">
             <a-entity 
@@ -49,15 +38,7 @@
                 gltf-model="#snake-model"
             ></a-entity>
         </a-marker>
-        <!-- Marcador para o Gato -->
-        <a-marker type="pattern" url="./marcadores/" id="marker-cat">
-            <a-entity 
-                id="modelocat"  
-                rotation="-60 30 30"     
-                scale="1 1 1"
-                gltf-model="#cat-model"
-            ></a-entity>
-        </a-marker>
+       
          <!-- Marcador para o Golfinho -->
          <a-marker type="pattern" url="./marcadores/purple.patt" id="marker-golfi">
             <a-entity 
@@ -69,44 +50,36 @@
                 gltf-model="#golfi-model"
             ></a-entity>
         </a-marker>
-         <!-- Marcador para o Rinoceronte -->
-         <a-marker type="pattern" url="./marcadores/" id="marker-rino">
+         <!-- Marcador para o Pantera -->
+         <a-marker type="pattern" url="./marcadores/" id="marker-panter">
             <a-entity 
-                id="modelorino"  
+                id="modelopanter"  
                 position="0.2 0.2 0.1"       
                 rotation="-30 20 50"
                 scale="15 15 15"
                
-                gltf-model="#rino-model"
+                gltf-model="#panter-model"
             ></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
 
     <!-- Botão HTML separado -->
-    <audio id="dog-sound">
-        <source src="./sons/dog.mp3" type="audio/mpeg">
-    </audio>
+
     <audio id="kro-sound">
         <source src="./sons/Kro.mp3" type="audio/mpeg">
     </audio>
     <audio id="snake-sound">
         <source src="./sons/snake.mp3" type="audio/mpeg">
     </audio>
-    <audio id="cat-sound">
-        <source src="./sons/cat.mp3" type="audio/mpeg">
-    </audio>
-    <audio id="leopard-sound">
-        <source src="./sons/cat.mp3" type="audio/mpeg">
-    </audio>
-    <audio id="rino-sound">
-        <source src="./sons/Rino.mp3" type="audio/mpeg">
-    </audio>
     <audio id="golfi-sound">
         <source src="./sons/golfi.mp3" type="audio/mpeg">
     </audio>
+    <audio id="panter-sound">
+        <source src="./sons/panter.mp3" type="audio/mpeg">
+    </audio>
+
     <div class="butto">
-        <button id="botao-cachorro" class="botao">Som do Cachorro!</button>
         <button id="botao-crocodilo" class="botao" >Som do Crocodilo!</button>
         <button   id="crocodilo-doubt" class="doubt" >lhjhk</button>
         <input type="button" id="input-croc" class="input-croc"></input>
@@ -118,13 +91,16 @@
         <div id="div-snake" class="div-snake">As cobras sentem cheiros pela língua. O órgão é dividido
              em duas partes, para conseguir detectar odores que venham de lados diferentes.
         </div>
-        <button id="botao-cat" class="botao" >Som do Gato!</button>
         <button id="botao-golfi" class="botao" >Som do Golfinho!</button>
         <input type="button" id="input-golfi" class="input-golfi"></input>
         <div id="div-golfi" class="div-golfi">Assim como outros mamíferos, os golfinhos possuem respiração pulmonar.
              Por isso, eles precisam subir até a superfície para captar oxigênio. 
         </div>
-        <button id="botao-rino" class="botao" >Som do Rinoceronte!</button>
+        <button id="botao-panter" class="botao" >Som da Pantera!</button>
+        <input type="button" id="input-panter" class="input-panter"></input>
+        <div id="div-panter" class="div-panter">Quando as pessoas vão à África e as observam e as comparam com outros grandes felinos,
+             as panteras parecem ser, em muitos aspectos, mais astutas.
+        </div>
     </div>  
     
 </body>
