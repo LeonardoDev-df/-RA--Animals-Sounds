@@ -133,9 +133,9 @@ AFRAME.registerComponent("markerhandler", {
             inputGolfi.style.display = "none";
             divGolfi.style.display = "none";
             const soundEl = document.getElementById("kro-sound");
-            if (soundEl) {
-                soundEl.stop();
-            }
+            
+            soundEl.stop();
+           
         });
 
         markerRino.addEventListener("markerFound", function () {
