@@ -59,7 +59,7 @@ AFRAME.registerComponent("markerhandler", {
             divCroc.style.display = "none";
             const soundEl = document.getElementById("kro-sound");
             
-            soundEl.stop();
+            soundEl.pause();
         });
 
         markerCobra.addEventListener("markerFound", function () {
@@ -77,7 +77,7 @@ AFRAME.registerComponent("markerhandler", {
             divSnake.style.display = "none";
             const soundEl = document.getElementById("snake-sound");
             
-            soundEl.stop();
+            soundEl.pause();
         });
 
 
@@ -97,7 +97,7 @@ AFRAME.registerComponent("markerhandler", {
             divGolfi.style.display = "none";
             const soundEl = document.getElementById("golfi-sound");
             
-            soundEl.stop();
+            soundEl.pause();
            
         });
 
@@ -114,7 +114,7 @@ AFRAME.registerComponent("markerhandler", {
             botaoPanter.style.display = "none";
             const soundEl = document.getElementById("panter-sound");
             
-            soundEl.stop();
+            soundEl.pause();
         });
 
         
