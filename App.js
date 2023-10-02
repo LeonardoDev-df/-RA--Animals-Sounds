@@ -21,21 +21,27 @@ AFRAME.registerComponent("markerhandler", {
          //div 
          const divCroc = document.getElementById("div-croc");
          const divSnake = document.getElementById("div-snake");
+         const divGolfi = document.getElementById("div-golfi");
         
         //input 
         const inputCroc = document.getElementById("input-croc");
         const inputSnake = document.getElementById("input-snake");
+        const inputGolfi = document.getElementById("input-golfi");
+
 
          // Evento de clique no botão do dúvida Crocodilo
          inputCroc.addEventListener("click", function () {
             divCroc.style.display = "block";
         });
-
-
          // Evento de clique no botão do dúvida Cobra
          inputSnake.addEventListener("click", function () {
             divSnake.style.display = "block";
         });
+         // Evento de clique no botão do dúvida Golfinho
+         inputGolfi.addEventListener("click", function () {
+            divGolfi.style.display = "block";
+        });
+        
         
 
     
@@ -68,7 +74,10 @@ AFRAME.registerComponent("markerhandler", {
             botaoCrocodilo.style.display = "none";
             inputCroc.style.display = "none";
             divCroc.style.display = "none";
-            soundEl.pause();
+            const soundEl = document.getElementById("kro-sound");
+            if (soundEl) {
+                soundEl.stop();
+            }
         });
 
         markerCobra.addEventListener("markerFound", function () {
@@ -85,7 +94,10 @@ AFRAME.registerComponent("markerhandler", {
             botaoCobra.style.display = "none";
             inputSnake.style.display = "none";
             divSnake.style.display = "none";
-            soundEl.pause();
+            const soundEl = document.getElementById("kro-sound");
+            if (soundEl) {
+                soundEl.stop();
+            }
         });
 
         markerCat.addEventListener("markerFound", function () {
@@ -107,6 +119,7 @@ AFRAME.registerComponent("markerhandler", {
         markerGolfi.addEventListener("markerFound", function () {
             // Marcador do Cobra detectado, exibir o botão do Cobra
             botaoGolfi.style.display = "block";
+            inputGolfi.style.display = "block";
             botaoCat.style.display = "none";// Ocultar o botão do Gato
             botaoRino.style.display = "none"; // Ocultar o botão do Cachorro
             botaoCobra.style.display = "none";// Ocultar o botão do Cachorro
@@ -117,7 +130,12 @@ AFRAME.registerComponent("markerhandler", {
         markerGolfi.addEventListener("markerLost", function () {
             // Marcador do Cachorro perdido, ocultar o botão do Cachorro
             botaoGolfi.style.display = "none";
-            soundEl.pause();
+            inputGolfi.style.display = "none";
+            divGolfi.style.display = "none";
+            const soundEl = document.getElementById("kro-sound");
+            if (soundEl) {
+                soundEl.stop();
+            }
         });
 
         markerRino.addEventListener("markerFound", function () {
@@ -134,7 +152,7 @@ AFRAME.registerComponent("markerhandler", {
         markerRino.addEventListener("markerLost", function () {
             // Marcador do Cachorro perdido, ocultar o botão do Cachorro
             botaoRino.style.display = "none";
-            soundEl.pause();
+            soundEl.stop();
         });
         markerCobra.addEventListener("markerLost", function () {
             // Marcador do Cachorro perdido, ocultar o botão do Cachorro
@@ -144,7 +162,7 @@ AFRAME.registerComponent("markerhandler", {
 
         // Evento de clique no botão do Cachorro
         botaoCachorro.addEventListener("click", function () {
-            alert("Cachorro Clicado!");
+          
             const soundEl = document.getElementById("dog-sound");
             if (soundEl) {
                 soundEl.play();
@@ -153,7 +171,7 @@ AFRAME.registerComponent("markerhandler", {
 
         // Evento de clique no botão do Crocodilo
         botaoCrocodilo.addEventListener("click", function () {
-            alert("Crocodilo Clicado!");
+           
             const soundEl = document.getElementById("kro-sound");
             if (soundEl) {
                 soundEl.play();
@@ -162,14 +180,14 @@ AFRAME.registerComponent("markerhandler", {
 
          // Evento de clique no botão do Crocodilo
          CrocodiloDoubt.addEventListener("click", function () {
-            alert("Crocodilo Clicado!");
+           
             divCroc.style.display = "block";
             
         });
 
          // Evento de clique no botão do Cobra
          botaoCobra.addEventListener("click", function () {
-            alert("Cobra Clicada!");
+           
             const soundEl = document.getElementById("snake-sound");
             if (soundEl) {
                 soundEl.play();
@@ -178,7 +196,7 @@ AFRAME.registerComponent("markerhandler", {
 
         // Evento de clique no botão do Gato
         botaoCat.addEventListener("click", function () {
-            alert("Gato Clicado!");
+           
             const soundEl = document.getElementById("cat-sound");
             if (soundEl) {
                 soundEl.play();
@@ -187,7 +205,7 @@ AFRAME.registerComponent("markerhandler", {
 
         // Evento de clique no botão do Gato
         botaoRino.addEventListener("click", function () {
-            alert("Rinoceronte Clicado!");
+          
             const soundEl = document.getElementById("rino-sound");
             if (soundEl) {
                 soundEl.play();
@@ -196,7 +214,7 @@ AFRAME.registerComponent("markerhandler", {
 
         // Evento de clique no botão do Gato
         botaoGolfi.addEventListener("click", function () {
-            alert("Golfinho Clicado!");
+       
             const soundEl = document.getElementById("golfi-sound");
             if (soundEl) {
                 soundEl.play();
