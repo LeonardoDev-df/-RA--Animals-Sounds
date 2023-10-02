@@ -104,6 +104,7 @@ AFRAME.registerComponent("markerhandler", {
         markerPanter.addEventListener("markerFound", function () {
             // Marcador do Cobra detectado, exibir o botão do Cobra
             botaoPanter.style.display = "block";
+            inputPanter.style.display = "block";
             botaoGolfi.style.display = "none"; // Ocultar o botão do Cachorro
             botaoCobra.style.display = "none";
             botaoCrocodilo.style.display = "none"; // Ocultar o botão do Crocodilo
@@ -112,6 +113,8 @@ AFRAME.registerComponent("markerhandler", {
         markerPanter.addEventListener("markerLost", function () {
             // Marcador da Pantera Negra perdido, ocultar o botão do Pantera
             botaoPanter.style.display = "none";
+            inputPanter.style.display = "none";
+            divPanter.style.display = "none";
             const soundEl = document.getElementById("panter-sound");
             
             soundEl.pause();
