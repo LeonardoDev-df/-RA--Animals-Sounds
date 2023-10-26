@@ -8,6 +8,7 @@ AFRAME.registerComponent("markerhandler", {
         const markerPanter = document.getElementById("marker-panter");
 
         //botão
+        document.getElementById("botao-sair").addEventListener("click", redirecionarPagina);
         const botaoCrocodilo = document.getElementById("botao-crocodilo");
         const botaoCobra = document.getElementById("botao-cobra");
         const botaoGolfi = document.getElementById("botao-golfi");
@@ -25,6 +26,11 @@ AFRAME.registerComponent("markerhandler", {
         const inputGolfi = document.getElementById("input-golfi");
         const inputPanter = document.getElementById("input-panter");
 
+
+        // Evento sair modo realidade aumentada
+        function redirecionarPagina() {
+            window.location.href = "https://ra-animals-sounds.vercel.app"; // Substitua com a URL para a qual você deseja redirecionar.
+        }
 
          // Evento de clique no botão do dúvida Crocodilo
          inputCroc.addEventListener("click", function () {
