@@ -44,10 +44,28 @@
     height: 6em;
 }
 
+.botao-converter-croc{
+    position: absolute;
+    background-image:url("../images/AD.png");
+    background-image: 10px;
+    background-position: 10% 40%; 
+    background-repeat: no-repeat, repeat-x;
+    background-position:  center;
+    background-size: 70px; 
+    top: 320px;
+    margin-left: 530px;
+    display: none;
+    padding: 0.45em;
+    border-radius: 4px;
+    border: none;
+    width: 5em;
+    height: 4em;
+}
+
 .sair {
     position: absolute;
-    top: 150px;
-    margin-left: 45%;
+    top: 70px;
+    margin-left: 55%;
     display: block;
     padding: 0.45em;
     border-radius: 4px;
@@ -66,7 +84,7 @@
     background-repeat: no-repeat, repeat-x;
     background-position:  center;
     background-size: 70px; 
-    top: 150px;
+    top: 220px;
     margin-left: -530px;
     display: none;
     padding: 0.45em;
@@ -78,7 +96,7 @@
 
 .div-croc{
     position: absolute;
-    top: 150px;
+    top: 200px;
     margin-left: 530px;
     text-align: justify;
     display: none;

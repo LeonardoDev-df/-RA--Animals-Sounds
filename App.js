@@ -26,6 +26,33 @@ AFRAME.registerComponent("markerhandler", {
         const inputGolfi = document.getElementById("input-golfi");
         const inputPanter = document.getElementById("input-panter");
 
+        //funcionalidae audio descrição
+       // Adicione um evento de clique ao botão de conversão
+        const botaoConverterCroc = document.getElementById('botao-converter-croc');
+
+        botaoConverterCroc.addEventListener('click', () => {
+            const textoParaFalar = document.getElementById('div-croc').textContent; // Obtém o texto da div-croc
+
+            const utterance = new SpeechSynthesisUtterance(textoParaFalar);
+
+            // Verifica se a síntese de fala é suportada no navegador
+            if ('speechSynthesis' in window) {
+                // Pausa qualquer fala anterior e inicia a nova
+                window.speechSynthesis.cancel();
+                window.speechSynthesis.speak(utterance);
+                utterance.onend = function() {
+                    console.log('Fala concluída');
+                };
+
+                // Converte o texto em áudio e exibe o áudio no elemento de áudio
+                const blobUrl = URL.createObjectURL(new Blob([textoParaFalar], { type: 'audio/wav' }));
+                audio.src = blobUrl;
+                audio.controls = true;
+            } else {
+                alert('A síntese de fala não é suportada neste navegador.');
+            }
+        });
+
 
         // Evento sair modo realidade aumentada
         function redirecionarPagina() {
@@ -35,6 +62,7 @@ AFRAME.registerComponent("markerhandler", {
          // Evento de clique no botão do dúvida Crocodilo
          inputCroc.addEventListener("click", function () {
             divCroc.style.display = "block";
+            botaoConverterCroc.style.display = "block";
         });
          // Evento de clique no botão do dúvida Cobra
          inputSnake.addEventListener("click", function () {
@@ -61,6 +89,7 @@ AFRAME.registerComponent("markerhandler", {
         markerCrocodilo.addEventListener("markerLost", function () {
             // Marcador do Crocodilo perdido, ocultar o botão do Crocodilo
             botaoCrocodilo.style.display = "none";
+            botaoConverterCroc.style.display = "none";
             inputCroc.style.display = "none";
             divCroc.style.display = "none";
             const soundEl = document.getElementById("kro-sound");
