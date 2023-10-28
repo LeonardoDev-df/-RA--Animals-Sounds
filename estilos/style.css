@@ -211,7 +211,7 @@
 }
 
 /* Estilos para dispositivos de tela menor, como smartphones */
-@media (min-width: 840px )  and (max-width: 1020px){
+@media (min-width: 840px )  and (max-width: 1424px){
     .botto {
         height: auto;
         flex-direction: column;
