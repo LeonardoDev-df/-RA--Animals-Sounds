@@ -228,22 +228,16 @@
         border: none;
         background: rgb(167, 7, 7);
         color: rgb(245, 245, 245);
-        width: 10em;
-        height: 3em;
-    }
-
-    .doubt {
-        display: block;
-        width: 80%;
-        margin-bottom: 10px;
+        width: 9em;
+        height: 2em;
     }
 
     .sair {
         display: block;
         top: 20px;
-        width: 12%;
-        height: 7%;
-        margin-right: 10%;
+        width: 9%;
+        height: 6%;
+        margin-right: -3%;
         margin-bottom: 10px;
     }
 
@@ -255,29 +249,29 @@
         background-position: 10% 40%; 
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
-        background-size: 50px; 
-        top: 330px;
+        background-size: 40px; 
+        top: 270px;
         margin-left: -810px;
         padding: 0.45em;
         border-radius: 4px;
         border: none;
-        width: 4em;
-        height: 4.5em;
+        width: 3em;
+        height: 4em;
     }
 
     
     .div-croc {
         display: block;
         position: absolute;
-        top: 220px;
-        margin-left: 520px;
+        top: 160px;
+        margin-left: 570px;
         text-align: justify;     
         padding: 0.45em;
         border-radius: 4px;
         border: none;
         background: rgb(17, 149, 182);
         color: rgb(245, 245, 245);
-        width: 9em;
+        width: 10em;
         height: auto;
     }
 
@@ -288,15 +282,15 @@
         background-position: 20% 80%; 
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
-        background-size: 70px; 
-        top: 350px;
-        margin-left: 520px;
+        background-size: 60px; 
+        top: 290px;
+        margin-left: 550px;
         display: block ;
         padding: 0.45em;
         border-radius: 4px;
         border: none;
         width: 4em;
-        height: 3em;
+        height: 2em;
     }
 }
 
@@ -358,7 +352,7 @@
     .div-croc {
         display: block;
         position: absolute;
-        top: 470px;
+        top: 440px;
         margin-left: 180px;
         text-align: justify;     
         padding: 0.45em;
@@ -378,7 +372,7 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 70px; 
-        top: 600px;
+        top: 570px;
         margin-left: 170px;
         display: block ;
         padding: 0.45em;
