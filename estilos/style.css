@@ -209,3 +209,92 @@
     width: 9.2em;
     height: auto;
 }
+
+/* Estilos para dispositivos de tela menor, como smartphones */
+@media (max-width: 768px) {
+    .botto {
+        height: auto;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .botao {
+        position: absolute;
+        top: 70px;
+        margin-right: -100%;
+        display: none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        background: rgb(167, 7, 7);
+        color: rgb(245, 245, 245);
+        width: 10em;
+        height: 3em;
+    }
+
+    .doubt {
+        display: block;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .sair {
+        display: block;
+        top: 20px;
+        width: 15%;
+        height: 5%;
+        margin-right: -110%;
+        margin-bottom: 10px;
+    }
+
+    .input-croc {
+        display: none;
+        position: absolute;
+        background-image:url("../images/Doubt.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 50px; 
+        top: 520px;
+        margin-left: 120px;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 4.5em;
+    }
+
+    .div-croc {
+        display: none;
+        position: absolute;
+        top: 370px;
+        margin-left: 600px;
+        text-align: justify;     
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        background: rgb(17, 149, 182);
+        color: rgb(245, 245, 245);
+        width: 9em;
+        height: 7em;
+    }
+
+    .botao-converter-croc {
+        position: absolute;
+        background-image:url("../images/AD.png");
+        background-image: 70px;
+        background-position: 20% 80%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 90px; 
+        top: 500px;
+        margin-left: 590px;
+        display: none ;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 5em;
+        height: 4em;
+    }
+}
