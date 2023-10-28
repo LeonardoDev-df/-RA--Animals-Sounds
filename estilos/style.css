@@ -211,7 +211,7 @@
 }
 
 /* Estilos para dispositivos de tela menor, como smartphones */
-@media (min-width: 870px )  and (max-width: 1020px){
+@media (min-width: 840px )  and (max-width: 1020px){
     .botto {
         height: auto;
         flex-direction: column;
@@ -251,7 +251,7 @@
         background-position:  center;
         background-size: 40px; 
         top: 270px;
-        margin-left: -810px;
+        margin-left: -76 0px;
         padding: 0.45em;
         border-radius: 4px;
         border: none;
@@ -264,14 +264,14 @@
         display: block;
         position: absolute;
         top: 160px;
-        margin-left: 570px;
+        margin-left: 320px;
         text-align: justify;     
         padding: 0.45em;
         border-radius: 4px;
         border: none;
         background: rgb(17, 149, 182);
         color: rgb(245, 245, 245);
-        width: 10em;
+        width: 13em;
         height: auto;
     }
 
@@ -283,8 +283,8 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 290px;
-        margin-left: 550px;
+        top: 260px;
+        margin-left: 350px;
         display: block ;
         padding: 0.45em;
         border-radius: 4px;
