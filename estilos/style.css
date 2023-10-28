@@ -263,8 +263,8 @@
     .div-croc {
         display: block;
         position: absolute;
-        top: 150px;
-        margin-left: 370px;
+        top: 130px;
+        margin-left: 420px;
         text-align: justify;     
         padding: 0.45em;
         border-radius: 4px;
@@ -283,8 +283,8 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 245px;
-        margin-left: 370px;
+        top: 155px;
+        margin-right: 210px;
         display: block ;
         padding: 0.45em;
         border-radius: 4px;
