@@ -221,8 +221,8 @@
     .botao {
         position: absolute;
         top: 70px;
-        margin-right: -100%;
-        display: none;
+        margin-right: 5%;
+        display: block;
         padding: 0.45em;
         border-radius: 4px;
         border: none;
@@ -243,12 +243,12 @@
         top: 20px;
         width: 15%;
         height: 5%;
-        margin-right: -110%;
+        margin-right: 10%;
         margin-bottom: 10px;
     }
 
     .input-croc {
-        display: none;
+        display: block;
         position: absolute;
         background-image:url("../images/Doubt.jpg");
         background-image: 10px;
@@ -256,8 +256,8 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 50px; 
-        top: 520px;
-        margin-left: 120px;
+        top: 500px;
+        margin-left: -290px;
         padding: 0.45em;
         border-radius: 4px;
         border: none;
@@ -266,10 +266,10 @@
     }
 
     .div-croc {
-        display: none;
+        display: block;
         position: absolute;
-        top: 370px;
-        margin-left: 600px;
+        top: 350px;
+        margin-left: 200px;
         text-align: justify;     
         padding: 0.45em;
         border-radius: 4px;
@@ -288,9 +288,9 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 90px; 
-        top: 500px;
-        margin-left: 590px;
-        display: none ;
+        top: 480px;
+        margin-left: 190px;
+        display: block ;
         padding: 0.45em;
         border-radius: 4px;
         border: none;
