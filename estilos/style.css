@@ -211,7 +211,7 @@
 }
 
 /* Estilos para dispositivos de tela menor, como smartphones */
-@media (min-width: 840px )  and (max-width: 1424px){
+@media (min-width: 768px )  and (max-width: 1424px){
     .botto {
         height: auto;
         flex-direction: column;
@@ -234,9 +234,9 @@
 
     .sair {
         display: block;
-        top: 20px;
-        width: 9%;
-        height: 6%;
+        top: 25px;
+        width: 8%;
+        height: 4%;
         margin-right: -3%;
         margin-bottom: 10px;
     }
