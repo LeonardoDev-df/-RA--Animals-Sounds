@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column; /* Para usar o sticky footer */
     min-height: 100vh; /* Preenche a altura da viewport */
-    background-image:url("../images/back.jpg");
+    background-image: url("../images/back.jpg");
     background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
     background-position: center center; /* Centraliza a imagem vertical e horizontalmente */
     background-repeat: no-repeat; /* Evita repetição da imagem */
@@ -54,7 +54,6 @@ p {
 .instruction-link:hover {
     color: #0056b3; /* Cor diferente ao passar o mouse sobre o link */
 }
-
 
 /* Estilos para o botão */
 .button {
@@ -110,100 +109,52 @@ p {
     text-decoration: none;
 }
 
-@media (max-width: 667px ){
+/* Consulta de mídia para celular em modo retrato */
+@media (max-width: 767px) {
     .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 115px;
-        box-sizing: border-box;
+        padding: 40px;
     }
-    
-    /* Estilos para o conteúdo principal */
+
     .content {
-        flex: 1; /* Cresce para preencher o espaço disponível */
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 10px;
-        box-sizing: border-box;
+        padding: 20px;
     }
-    
+
     h1 {
-        color: #007bff;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+}
+
+/* Consulta de mídia para celular em modo paisagem (landscape) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding: 85px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    h1 {
         font-size: 20px;
         margin-bottom: 10px;
-        font-family: Arial, sans-serif;
     }
-    
+
     p {
-        color: #666;
         font-size: 14px;
-        margin-bottom: 20px;
-        font-family: Arial, sans-serif;
     }
-    
-    .instruction-link {
-        color: #007bff; /* Cor do link */
-        text-decoration: none; /* Remova a sublinhado padrão */
-        font-weight: bold; /* Torne o texto em negrito */
-        transition: color 0.3s ease; /* Efeito de transição de cor suave */
-    }
-    
-    .instruction-link:hover {
-        color: #0056b3; /* Cor diferente ao passar o mouse sobre o link */
-    }
-    
-    
-    /* Estilos para o botão */
+
     .button {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 6px 10px;
-        background-color: #007bff;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-        font-size: 15px;
-    }
-    
-    .button:hover {
-        background-color: #0056b3;
-    }
-    
-    /* Estilos para o rodapé */
-    .footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        color: #fff;
-        font-family: Arial, sans-serif;
-        text-align: center;
-    }
-    
-    .footer-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
-    
-    /* Estilos para os links no rodapé */
-    .footer-links {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .footer-links li {
-        margin-right: 20px;
-    }
-    
-    .footer-links a {
-        color: #fff;
-        text-decoration: none;
+        padding: 6px 15px;
+        font-size: 10px;
     }
 }
