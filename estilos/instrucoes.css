@@ -7,39 +7,44 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    background-image:url("../images/back.jpg");
     min-height: 100vh;
+    background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
+    background-position: center center; /* Centraliza a imagem vertical e horizontalmente */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 25px;
+    padding: 81px;
     box-sizing: border-box;
 }
 
 h1 {
     color: #007bff;
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 26px;
+    margin-bottom:5px;
 }
 
 p {
     color: #666;
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: cursive;
 }
 
 .animal-images {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 30px;
+    justify-content: space-around;
+    margin-bottom: 25px;
 }
 
 .animal-image {
-    width: 45%; /* Define a largura desejada para cada imagem (45% para duas imagens lado a lado) */
+    width: 35%; /* Define a largura desejada para cada imagem (45% para duas imagens lado a lado) */
     margin-bottom: 20px;
-    margin-right: 10px; /* Espaço horizontal entre as imagens */
+    margin-right: 5px; /* Espaço horizontal entre as imagens */
     text-align: center; /* Centraliza o conteúdo dentro do contêiner */
 }
 
@@ -56,13 +61,14 @@ p {
 .animal-button {
     display: block;
     margin: 0 auto;
-    padding: 15px 30px;
+    padding: 5px 20px;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    font-size: 20px;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 .animal-button:hover {
@@ -72,7 +78,7 @@ p {
 /* Estilos para o botão */
 .return-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 8px 10px;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;

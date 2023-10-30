@@ -11,17 +11,72 @@
     top: 5%;
 }
 
+#botao-crocodilo{
+    display: none;
+    background-image:url("../images/Croc.jpg");
+    background-image: 10px;
+    background-position: 10% 40%; 
+    background-repeat: no-repeat, repeat-x;
+    background-position:  center;
+    background-size: 190px; 
+    margin-left: -14%;
+    margin-top: 2%;
+    
+}
+
+#botao-cobra{
+    display: none;
+    background-image:url("../images/Snake.jpg");
+    background-image: 10px;
+    background-position: 10% 40%; 
+    background-repeat: no-repeat, repeat-x;
+    background-position:  center;
+    background-size: 130px; 
+    margin-left: -14%;
+    margin-top: 2%;
+    width: 10em !important; 
+    height: 7.5em;
+    
+}
+
+#botao-golfi{
+    display: none;
+    background-image:url("../images/Golfin.jpg");
+    background-image: 10px;
+    background-position: 10% 40%; 
+    background-repeat: no-repeat, repeat-x;
+    background-position:  center;
+    background-size: 190px; 
+    margin-left: -14%;
+    margin-top: 2%;
+    width: 14em !important; 
+    height: 9.5em;
+    border-radius: 9px;
+}
+
+#botao-panter{
+    display: none;
+    background-image:url("../images/panter.jpg");
+    background-image: 10px;
+    background-position: 10% 40%; 
+    background-repeat: no-repeat, repeat-x;
+    background-position:  center;
+    background-size: 190px; 
+    margin-left: -14%;
+    margin-top: 2%;
+    height: 8.5em;
+}
+
 .botao {
     position: absolute;
     top: 20px;
     display: none;
     padding: 0.45em;
-    border-radius: 4px;
+    border-radius: 5px;
     border: none;
-    background: rgb(167, 7, 7);
-    color: rgb(245, 245, 245);
-    width: 12em;
-    height: 4em;
+    width: 14em;
+    height: 7em;
+    cursor: pointer;
 }
 
 
@@ -42,19 +97,24 @@
     color: rgb(196, 11, 11);
     width: 12em;
     height: 6em;
+    cursor: pointer;
 }
 
 .sair {
-    position: absolute;
+    position: fixed;
+    background-image:url("../images/botão-voltar.png"); 
+    background-repeat: no-repeat, repeat-x;
+    background-position:  center;
+    background-size: 105px; 
     top: 50px;
     margin-left: 70%;
     display: block;
-    padding: 0.45em;
-    border-radius: 4px;
-    border: none;
-    background: rgb(167, 7, 7);
-    color: rgb(245, 245, 245);
-    width: 12em;
+    border-radius: 10px;
+    border-color: red;
+    border: 1px solid;
+   
+    cursor: pointer;
+    width: 8em;
     height: 4em;
 }
 
@@ -74,6 +134,7 @@
     border: none;
     width: 5em;
     height: 6em;
+    cursor: pointer;
 }
 
 
@@ -93,6 +154,7 @@
     border: none;
     width: 7em;
     height: 5em;
+    cursor: pointer;
 }
 
 .div-croc{
