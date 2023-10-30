@@ -29,9 +29,37 @@ AFRAME.registerComponent("markerhandler", {
         //funcionalidae audio descrição
        // Adicione um evento de clique ao botão de conversão
         const botaoConverterCroc = document.getElementById('botao-converter-croc');
+       
 
         botaoConverterCroc.addEventListener('click', () => {
             const textoParaFalar = document.getElementById('div-croc').textContent; // Obtém o texto da div-croc
+
+            const utterance = new SpeechSynthesisUtterance(textoParaFalar);
+
+            // Verifica se a síntese de fala é suportada no navegador
+            if ('speechSynthesis' in window) {
+                // Pausa qualquer fala anterior e inicia a nova
+                window.speechSynthesis.cancel();
+                window.speechSynthesis.speak(utterance);
+                utterance.onend = function() {
+                    console.log('Fala concluída');
+                };
+
+                // Converte o texto em áudio e exibe o áudio no elemento de áudio
+                const blobUrl = URL.createObjectURL(new Blob([textoParaFalar], { type: 'audio/wav' }));
+                audio.src = blobUrl;
+                audio.controls = true;
+            } else {
+                alert('A síntese de fala não é suportada neste navegador.');
+            }
+        });
+
+        // Adicione um evento de clique ao botão de conversão
+        const botaoConverterSnake= document.getElementById('botao-converter-snake');
+       
+
+        botaoConverterSnake.addEventListener('click', () => {
+            const textoParaFalar = document.getElementById('div-snake').textContent; // Obtém o texto da div-croc
 
             const utterance = new SpeechSynthesisUtterance(textoParaFalar);
 
@@ -67,6 +95,7 @@ AFRAME.registerComponent("markerhandler", {
          // Evento de clique no botão do dúvida Cobra
          inputSnake.addEventListener("click", function () {
             divSnake.style.display = "block";
+            botaoConverterSnake.style.display = "block";
         });
          // Evento de clique no botão do dúvida Golfinho
          inputGolfi.addEventListener("click", function () {
@@ -90,6 +119,7 @@ AFRAME.registerComponent("markerhandler", {
             // Marcador do Crocodilo perdido, ocultar o botão do Crocodilo
             botaoCrocodilo.style.display = "none";
             botaoConverterCroc.style.display = "none";
+            botaoConverterSnake.style.display = "none";
             inputCroc.style.display = "none";
             divCroc.style.display = "none";
             const soundEl = document.getElementById("kro-sound");
@@ -109,6 +139,7 @@ AFRAME.registerComponent("markerhandler", {
             // Marcador do Cachorro perdido, ocultar o botão do Cachorro
             botaoCobra.style.display = "none";
             inputSnake.style.display = "none";
+            botaoConverterSnake.style.display = "none";
             divSnake.style.display = "none";
             const soundEl = document.getElementById("snake-sound");
             
