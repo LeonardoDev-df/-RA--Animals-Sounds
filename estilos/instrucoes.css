@@ -42,9 +42,9 @@ p {
 }
 
 .animal-image {
-    width: 35%; /* Define a largura desejada para cada imagem (45% para duas imagens lado a lado) */
+    width: 48%; /* Define a largura desejada para cada imagem (48% para duas imagens lado a lado) */
     margin-bottom: 20px;
-    margin-right: 5px; /* Espaço horizontal entre as imagens */
+    margin-right: 2%; /* Espaço horizontal entre as imagens */
     text-align: center; /* Centraliza o conteúdo dentro do contêiner */
 }
 
@@ -132,9 +132,9 @@ footer {
     }
 
     .animal-image {
-        width: 35%;
+        width: 48%;
         margin-bottom: 20px;
-        margin-right: 5px;
+        margin-right: 2%;
     }
 
     .animal-button {
@@ -165,12 +165,12 @@ footer {
     .animal-image {
         width: 30%;
         margin-bottom: 20px;
-        margin-right: 5px;
+        margin-right: 2%;
     }
 
     .animal-button {
-        padding: 1px 10px;
-        font-size: 8px;
+        padding: 5px 5px;
+        font-size: 15px;
     }
 }
 
@@ -199,9 +199,9 @@ footer {
     }
 
     .animal-image {
-        width: 35%;
+        width: 48%;
         margin-bottom: 20px;
-        margin-right: 5px;
+        margin-right: 2%;
     }
 
     .animal-button {
