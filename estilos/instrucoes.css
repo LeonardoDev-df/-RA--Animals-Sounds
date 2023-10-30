@@ -31,7 +31,7 @@ p {
     color: #666;
     font-size: 16px;
     margin-bottom: 10px;
-    font-family: cursive;
+    font-family: Arial, sans-serif;
 }
 
 .animal-images {
@@ -119,13 +119,13 @@ footer {
     .container {
         max-width: 800px;
         margin: 0 auto;
-        padding: 85px;
+        padding: 80px;
         box-sizing: border-box;
     }
     
     h1 {
         color: #007bff;
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom:5px;
     }
     
@@ -133,7 +133,7 @@ footer {
         color: #666;
         font-size: 12px;
         margin-bottom: 10px;
-        font-family: cursive;
+        font-family: Arial, sans-serif;
     }
     
     .animal-images {
@@ -163,13 +163,13 @@ footer {
     .animal-button {
         display: block;
         margin: 0 auto;
-        padding: 1px 20px;
+        padding: 1px 10px;
         background-color: #007bff;
         color: #fff;
         text-decoration: none;
         border-radius: 5px;
         transition: background-color 0.3s ease;
-        font-size: 10px;
+        font-size: 8px;
         cursor: pointer;
     }
     
@@ -195,15 +195,15 @@ footer {
     
     h1 {
         color: #007bff;
-        font-size: 26px;
+        font-size: 22px;
         margin-bottom:5px;
     }
     
     p {
         color: #666;
-        font-size: 16px;
+        font-size: 12px;
         margin-bottom: 10px;
-        font-family: cursive;
+        font-family: Arial, sans-serif;
     }
     
     .animal-images {
