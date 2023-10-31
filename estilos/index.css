@@ -151,8 +151,10 @@ span{
 }
 
 
-/* Consulta de mídia para celular em modo retrato em pé */
-@media screen and (max-width: 640px) {
+/* Consulta de mídia para dispositivos em modo retrato */
+@media screen and (max-width: 640px) and (orientation: portrait) {
+    /* Estilos para dispositivos em modo retrato com largura máxima de 640px */
+    
     .container {
         max-width: 800px;
         margin: 0 auto;
@@ -179,23 +181,21 @@ span{
     .button {
         padding: 5px 10px;
         font-size: 16px;
-        
     }
+}
 
-
-    /* Estilos para o rodapé */
+/* Estilos para o rodapé */
 .footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    margin-top: 196%;
     position: fixed;
     width: 100%;
-    height: 7%;
+    bottom: 0; /* Posiciona o rodapé na parte inferior da janela */
 }
 
-.links{
+.links {
     display: flex;
 }
 
@@ -208,15 +208,14 @@ span{
     margin: 0 auto;
 }
 
-/* Estilos para o texto central */
+/* Estilos para o texto central do rodapé */
 .footer-content p {
     font-size: 10px;
- 
 }
 
 /* Estilos para os links à esquerda */
 .social-links {
-    flex: 1; /* Ocupa todo o espaço disponível à esquerda */
+    flex: 1;
     font-size: 24px;
     display: flex;
     justify-content: flex-start;
@@ -227,27 +226,25 @@ span{
     text-decoration: none;
     margin-top: 10px !important;
     align-items: flex-start;
-
 }
 
-.footer-text{
+.footer-text {
     height: 2.7rem;
-  
     border-top: 1px solid var(--text);
     display: flex;
     text-align: justify;
     align-items: center;
 }
 
-span{
+span {
     color: #eba42d;
     font-size: 10px;
-margin-top: -5px;
+    margin-top: -5px;
 }
 
 /* Estilos para o link de download à direita */
 .footer-content a {
-    flex: 1; /* Ocupa todo o espaço disponível à direita */
+    flex: 1;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -260,7 +257,7 @@ margin-top: -5px;
 .footer-content a:hover {
     color: #007bff;
 }
-}
+
 
 /* Consulta de mídia para celular em modo paisagem (landscape) deitado */
 @media (min-width: 667px) and (max-width: 1023px) {
