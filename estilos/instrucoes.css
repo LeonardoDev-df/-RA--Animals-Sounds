@@ -15,9 +15,9 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 450px;
     margin: 0 auto;
-    padding: 81px;
+    padding: 71px;
     box-sizing: border-box;
 }
 
@@ -29,21 +29,22 @@ h1 {
 
 p {
     color: #666;
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 12px;
+    margin-bottom: 5px;
     font-family: Arial, sans-serif;
 }
 
 .animal-images {
+    margin-top: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .animal-image {
-    width: 48%; /* Define a largura desejada para cada imagem (48% para duas imagens lado a lado) */
-    margin-bottom: 20px;
+    width: 38%; /* Define a largura desejada para cada imagem (48% para duas imagens lado a lado) */
+    margin-bottom: 10px;
     margin-right: 2%; /* Espaço horizontal entre as imagens */
     text-align: center; /* Centraliza o conteúdo dentro do contêiner */
 }
@@ -112,81 +113,71 @@ footer {
     padding: 0 10px;
 }
 
-/* Consulta de mídia para celular em modo retrato */
-@media (max-width: 767px) {
-    .container {
-        padding: 40px;
-    }
-
-    h1 {
-        font-size: 22px;
-        margin-bottom: 5px;
-    }
-
-    p {
-        font-size: 12px;
-    }
-
-    .animal-images {
-        margin-bottom: 20px;
-    }
-
-    .animal-image {
-        width: 48%;
-        margin-bottom: 20px;
-        margin-right: 2%;
-    }
-
-    .animal-button {
-        padding: 5px 5px;
-        font-size: 15px;
-    }
-}
 
 /* Consulta de mídia para celular em modo paisagem (landscape)  deitado */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .container {
         padding: 10px;
+        margin-top: 4%;
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 14px;
         margin-bottom: 5px;
     }
-
-    p {
-        font-size: 12px;
-    }
-
+    
+   
     .animal-images {
         margin-bottom: 20px;
     }
 
     .animal-image {
-        width: 30%;
-        margin-bottom: 20px;
+        width: 20% !important;
+        margin-bottom: 0px;
+        margin-top: 1%;
         margin-right: 2%;
     }
 
     .animal-button {
         padding: 5px 5px;
-        font-size: 15px;
+        font-size: 10px;
     }
+
+    /* Estilos para o botão */
+.return-button {
+    display: inline-block;
+    margin-top: -1%;
+    padding: 4px 5px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
 }
 
 /* Estilos para dispositivos móveis  em pé*/
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 767px) {
     .footer-content {
         flex-direction: column;
         text-align: center;
     }
 
     .container {
-        padding: 75px;
+        max-width: 800px;
+        margin: 0 auto;
+        /* padding: 25px; */
+        box-sizing: border-box;
+        /* padding: 20px; */
+        margin-top: 30%;
     }
 
     h1 {
         font-size: 22px;
+        height: auto;
         margin-bottom: 5px;
     }
 
@@ -206,6 +197,6 @@ footer {
 
     .animal-button {
         padding: 5px 5px;
-        font-size: 15px;
+        font-size: 13px;
     }
 }
