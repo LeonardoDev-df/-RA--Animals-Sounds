@@ -263,7 +263,7 @@ margin-top: -5px;
 }
 
 /* Consulta de mídia para celular em modo paisagem (landscape) deitado */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 667px) and (max-width: 1023px) {
     .container {
         padding: 85px;
     }
@@ -335,9 +335,10 @@ margin-top: -5px;
     
     .footer-text{
         height: 2.7rem;
-      margin-left: 220px;
+        margin-left: 220px;
         border-top: 1px solid var(--text);
         display: flex;
+        margin-top: -4px;
         text-align: justify;
         align-items: center;
     }

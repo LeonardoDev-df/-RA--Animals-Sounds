@@ -94,24 +94,83 @@ p {
 }
 
 /* Estilos para o rodapé */
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+.footer {
     background-color: #333;
     color: #fff;
     text-align: center;
+    padding: 10px 0;
+    margin-top: 42%;
+    position: fixed;
+    width: 100%;
+    height: 7%;
+}
+
+.links{
+    display: flex;
 }
 
 .footer-content {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 10px;
 }
+
+/* Estilos para o texto central */
+.footer-content p {
+    flex: 1; /* Ocupa todo o espaço disponível no centro */
+    font-size: 16px;
+ 
+}
+
+/* Estilos para os links à esquerda */
+.social-links {
+    flex: 1; /* Ocupa todo o espaço disponível à esquerda */
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: -1020%;
+    margin-top: -20% !important;
+    
+}
+
+.footer-text{
+    height: 6.4rem;
+    border-top: 1px solid var(--text);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: -3%;
+}
+
+span{
+    color: #eba42d;
+}
+
+/* Estilos para o link de download à direita */
+.footer-content a {
+    flex: 1; /* Ocupa todo o espaço disponível à direita */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    text-align: right;
+    margin-top: -3%;
+    text-align: center;
+}
+
+.footer-content a:hover {
+    color: #007bff;
+}
+
 
 
 /* Consulta de mídia para celular em modo paisagem (landscape)  deitado */
@@ -245,7 +304,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    margin-top: 190%;
+    margin-top: 185%;
     position: fixed;
     width: 100%;
     height: 7%;
@@ -267,7 +326,9 @@ footer {
 /* Estilos para o texto central */
 .footer-content p {
     font-size: 10px;
- 
+    text-align: center;
+    justify-content: center;
+    margin-left: 20px;
 }
 
 /* Estilos para os links à esquerda */
@@ -298,7 +359,7 @@ footer {
 span{
     color: #eba42d;
     font-size: 10px;
-    margin-top: -3px;
+    
 }
 
 /* Estilos para o link de download à direita */
