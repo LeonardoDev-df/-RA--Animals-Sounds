@@ -152,7 +152,7 @@ span{
 
 
 /* Consulta de mídia para celular em modo retrato em pé */
-@media (max-width: 767px) {
+@media (max-width: 740px) {
     .container {
         max-width: 800px;
         margin: 0 auto;
