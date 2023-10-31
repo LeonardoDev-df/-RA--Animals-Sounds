@@ -7,7 +7,300 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Tela Inicial</title>
     <style>
-        /* Estilos para o corpo da página */
+        /* Estilos para o rodapé */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 42%;
+    position: fixed;
+    width: 100%;
+    height: 7%;
+}
+
+.links{
+    display: flex;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos para o texto central */
+.footer-content p {
+    flex: 1; /* Ocupa todo o espaço disponível no centro */
+    font-size: 16px;
+ 
+}
+
+/* Estilos para os links à esquerda */
+.social-links {
+    flex: 1; /* Ocupa todo o espaço disponível à esquerda */
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: -1020%;
+    margin-top: -20% !important;
+    
+}
+
+.footer-text{
+    height: 6.4rem;
+    border-top: 1px solid var(--text);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: -3%;
+}
+
+span{
+    color: #eba42d;
+}
+
+/* Estilos para o link de download à direita */
+.footer-content a {
+    flex: 1; /* Ocupa todo o espaço disponível à direita */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    text-align: right;
+    margin-top: -3%;
+    text-align: center;
+}
+
+.footer-content a:hover {
+    color: #007bff;
+}
+
+
+/* Consulta de mídia para celular em modo retrato em pé */
+@media screen and (max-width: 740px) {
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 125px;
+        box-sizing: border-box;
+        margin-top: 18%;
+    }
+
+    .content {
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 22px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        height: auto;
+    }
+
+    .button {
+        padding: 5px 10px;
+        font-size: 16px;
+        
+    }
+
+
+    /* Estilos para o rodapé */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 196%;
+    position: fixed;
+    width: 100%;
+    height: 7%;
+}
+
+.links{
+    display: flex;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Estilos para o texto central */
+.footer-content p {
+    font-size: 10px;
+ 
+}
+
+/* Estilos para os links à esquerda */
+.social-links {
+    flex: 1; /* Ocupa todo o espaço disponível à esquerda */
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px !important;
+    align-items: flex-start;
+
+}
+
+.footer-text{
+    height: 2.7rem;
+  
+    border-top: 1px solid var(--text);
+    display: flex;
+    text-align: justify;
+    align-items: center;
+}
+
+span{
+    color: #eba42d;
+    font-size: 10px;
+margin-top: -5px;
+}
+
+/* Estilos para o link de download à direita */
+.footer-content a {
+    flex: 1; /* Ocupa todo o espaço disponível à direita */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    transition: color 0.3s ease;
+    text-align: right;
+    margin-left: 50px !important;
+}
+
+.footer-content a:hover {
+    color: #007bff;
+}
+}
+
+/* Consulta de mídia para celular em modo paisagem (landscape) deitado */
+@media (min-width: 667px) and (max-width: 1023px) {
+    .container {
+        padding: 85px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 6px 15px;
+        font-size: 10px;
+    }
+
+
+     /* Estilos para o rodapé */
+     .footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 41%;
+        position: fixed;
+        width: 100%;
+        height: 9%;
+    }
+    
+    .links{
+        display: flex;
+    }
+    
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    /* Estilos para o texto central */
+    .footer-content p {
+        font-size: 10px;
+     
+    }
+    
+    /* Estilos para os links à esquerda */
+    .social-links {
+        flex: 1; /* Ocupa todo o espaço disponível à esquerda */
+        font-size: 14px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .social-links a {
+        color: #fff;
+        text-decoration: none;
+        margin-top: 10px !important;
+        margin-left: -1220px !important;
+    }
+    
+    .footer-text{
+        height: 2.7rem;
+        margin-left: 220px;
+        border-top: 1px solid var(--text);
+        display: flex;
+        margin-top: -4px;
+        text-align: justify;
+        align-items: center;
+    }
+    
+    span{
+        color: #eba42d;
+        font-size: 10px;
+        margin-top: -3px;
+    }
+    
+    /* Estilos para o link de download à direita */
+    .footer-content a {
+        flex: 1; /* Ocupa todo o espaço disponível à direita */
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 10px;
+        margin-top: -10px;
+        transition: color 0.3s ease;
+        margin-left: 50px !important;
+    }
+    
+    .footer-content a:hover {
+        color: #007bff;
+    }
+}
+
      
     </style>
 </head>
