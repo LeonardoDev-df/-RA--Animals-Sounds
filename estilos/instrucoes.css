@@ -296,7 +296,7 @@ span{
 }
 
 /* Estilos para dispositivos móveis  em pé*/
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 640px) {
     
     /* Estilos para o rodapé */
 .footer {
