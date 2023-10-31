@@ -152,7 +152,7 @@ span{
 
 
 /* Consulta de mídia para celular em modo retrato em pé */
-@media (max-width: 740px) {
+@media (max-width: 667px) {
     .container {
         max-width: 800px;
         margin: 0 auto;
@@ -263,7 +263,7 @@ margin-top: -5px;
 }
 
 /* Consulta de mídia para celular em modo paisagem (landscape) deitado */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 668px) and (max-width: 1023px) {
     .container {
         padding: 85px;
     }
