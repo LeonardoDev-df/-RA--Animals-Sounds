@@ -176,6 +176,44 @@
     cursor: pointer;
 }
 
+.botao-converter-golfin{
+    position: absolute;
+    background-image:url("../images/AD.png");
+    background-image: 70px;
+    background-position: 20% 80%; 
+    background-repeat: no-repeat, repeat-x;
+    background-position:  center;
+    background-size: 120px; 
+    top: 180px;
+    margin-left: 925px;
+    display: none ;
+    padding: 0.45em;
+    border-radius: 4px;
+    border: none;
+    width: 7em;
+    height: 5em;
+    cursor: pointer;
+}
+
+.botao-converter-panter{
+    position: absolute;
+    background-image:url("../images/AD.png");
+    background-image: 70px;
+    background-position: 20% 80%; 
+    background-repeat: no-repeat, repeat-x;
+    background-position:  center;
+    background-size: 120px; 
+    top: 180px;
+    margin-left: 925px;
+    display: none ;
+    padding: 0.45em;
+    border-radius: 4px;
+    border: none;
+    width: 7em;
+    height: 5em;
+    cursor: pointer;
+}
+
 .div-croc{
     position: absolute;
     top: 160px;

@@ -81,6 +81,60 @@ AFRAME.registerComponent("markerhandler", {
             }
         });
 
+        // Adicione um evento de clique ao botão de conversão
+        const botaoConverterGolfin = document.getElementById('botao-converter-golfin');
+       
+
+        botaoConverterGolfin.addEventListener('click', () => {
+            const textoParaFalar = document.getElementById('div-golfi').textContent; // Obtém o texto da div-croc
+
+            const utterance = new SpeechSynthesisUtterance(textoParaFalar);
+
+            // Verifica se a síntese de fala é suportada no navegador
+            if ('speechSynthesis' in window) {
+                // Pausa qualquer fala anterior e inicia a nova
+                window.speechSynthesis.cancel();
+                window.speechSynthesis.speak(utterance);
+                utterance.onend = function() {
+                    console.log('Fala concluída');
+                };
+
+                // Converte o texto em áudio e exibe o áudio no elemento de áudio
+                const blobUrl = URL.createObjectURL(new Blob([textoParaFalar], { type: 'audio/wav' }));
+                audio.src = blobUrl;
+                audio.controls = true;
+            } else {
+                alert('A síntese de fala não é suportada neste navegador.');
+            }
+        });
+
+        // Adicione um evento de clique ao botão de conversão
+        const botaoConverterPanter = document.getElementById('botao-converter-panter');
+       
+
+        botaoConverterPanter.addEventListener('click', () => {
+            const textoParaFalar = document.getElementById('div-panter').textContent; // Obtém o texto da div-croc
+
+            const utterance = new SpeechSynthesisUtterance(textoParaFalar);
+
+            // Verifica se a síntese de fala é suportada no navegador
+            if ('speechSynthesis' in window) {
+                // Pausa qualquer fala anterior e inicia a nova
+                window.speechSynthesis.cancel();
+                window.speechSynthesis.speak(utterance);
+                utterance.onend = function() {
+                    console.log('Fala concluída');
+                };
+
+                // Converte o texto em áudio e exibe o áudio no elemento de áudio
+                const blobUrl = URL.createObjectURL(new Blob([textoParaFalar], { type: 'audio/wav' }));
+                audio.src = blobUrl;
+                audio.controls = true;
+            } else {
+                alert('A síntese de fala não é suportada neste navegador.');
+            }
+        });
+
 
         // Evento sair modo realidade aumentada
         function redirecionarPagina() {
@@ -100,10 +154,12 @@ AFRAME.registerComponent("markerhandler", {
          // Evento de clique no botão do dúvida Golfinho
          inputGolfi.addEventListener("click", function () {
             divGolfi.style.display = "block";
+            botaoConverterGolfin.style.display = "block";
         });
         // Evento de clique no botão do dúvida Pantera Negra
         inputPanter.addEventListener("click", function () {
             divPanter.style.display = "block";
+            botaoConverterPanter.style.display = "block";
         });
         
 
@@ -120,6 +176,8 @@ AFRAME.registerComponent("markerhandler", {
             botaoCrocodilo.style.display = "none";
             botaoConverterCroc.style.display = "none";
             botaoConverterSnake.style.display = "none";
+            botaoConverterPanter.style.display = "none";
+            botaoConverterGolfin.style.display = "none";
             inputCroc.style.display = "none";
             divCroc.style.display = "none";
             const soundEl = document.getElementById("kro-sound");
@@ -140,6 +198,9 @@ AFRAME.registerComponent("markerhandler", {
             botaoCobra.style.display = "none";
             inputSnake.style.display = "none";
             botaoConverterSnake.style.display = "none";
+            botaoConverterCroc.style.display = "none";
+            botaoConverterPanter.style.display = "none";
+            botaoConverterGolfin.style.display = "none";
             divSnake.style.display = "none";
             const soundEl = document.getElementById("snake-sound");
             
