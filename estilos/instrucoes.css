@@ -15,21 +15,21 @@ body {
 }
 
 .container {
-    max-width: 450px;
+    max-width: 800px !important;
     margin: 0 auto;
-    padding: 71px;
+    padding: 101px !important;
     box-sizing: border-box;
 }
 
 h1 {
     color: #007bff;
-    font-size: 26px;
+    font-size: 28px !important;
     margin-bottom: 5px;
 }
 
 p {
     color: #666;
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: 5px;
     font-family: Arial, sans-serif;
 }
@@ -67,7 +67,7 @@ p {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    font-size: 15px;
+    font-size: 13px !important;
     cursor: pointer;
 }
 
@@ -175,7 +175,7 @@ span{
 
 
 /* Consulta de mídia para celular em modo paisagem (landscape)  deitado */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
     .container {
         padding: 10px;
         margin-top: 4%;
@@ -302,9 +302,9 @@ span{
     /* Estilos para dispositivos em modo retrato com largura máxima de 640px */
     
     .container {
-        max-width: 800px;
+        max-width: 400px;
         margin: 0 auto;
-        padding: 125px;
+        padding: 25px !important;
         box-sizing: border-box;
         margin-top: 18%;
     }
@@ -335,7 +335,7 @@ span{
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 0 !important;
     position: fixed;
     width: 100%;
     bottom: 0; /* Posiciona o rodapé na parte inferior da janela */
@@ -378,7 +378,7 @@ span{
     height: 2.7rem;
     border-top: 1px solid var(--text);
     display: flex;
-    margin-left: 15px;
+    margin-left: 5px !important;
     text-align: justify;
     align-items: center;
 }
