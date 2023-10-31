@@ -143,10 +143,10 @@ footer {
     }
 }
 
-/* Consulta de mídia para celular em modo paisagem (landscape) */
+/* Consulta de mídia para celular em modo paisagem (landscape)  deitado */
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
-        padding: 80px;
+        padding: 10px;
     }
 
     h1 {
@@ -174,8 +174,8 @@ footer {
     }
 }
 
-/* Estilos para dispositivos móveis */
-@media screen and (max-width: 740px) {
+/* Estilos para dispositivos móveis  em pé*/
+@media screen and (max-width: 667px) {
     .footer-content {
         flex-direction: column;
         text-align: center;

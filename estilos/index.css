@@ -109,32 +109,32 @@ p {
     text-decoration: none;
 }
 
-/* Consulta de mídia para celular em modo retrato */
-@media (max-width: 767px) {
+/* Consulta de mídia para celular em modo retrato em pé */
+@media (max-width: 667px) {
     .container {
-        padding: 40px;
+        padding: 95px;
     }
 
     .content {
-        padding: 20px;
+        padding: 40px;
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 18px;
         margin-bottom: 10px;
     }
 
     p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .button {
-        padding: 10px 20px;
-        font-size: 18px;
+        padding: 5px 10px;
+        font-size: 14px;
     }
 }
 
-/* Consulta de mídia para celular em modo paisagem (landscape) */
+/* Consulta de mídia para celular em modo paisagem (landscape) deitado */
 @media (min-width: 768px) and (max-width: 1023px) {
     .container {
         padding: 85px;
