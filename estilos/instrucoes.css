@@ -274,20 +274,20 @@ span{
     }
     
     .footer-text{
-        margin-top: -75px !important;
-        margin-left: 520px !important;
+        margin-top: -70px !important;
+        margin-right: -120px !important;
         border-top: 1px solid var(--text);
         display: flex;
         text-align: justify;
         text-align: center;
-        font-size: 10px;
+        font-size: 10px !important;
         align-items: center;
     }
     
     span{
         color: #eba42d;
-        font-size: 10px;
         margin-top: -3px;
+        font-size: 10px !important;
     }
     
     /* Estilos para o link de download à direita */

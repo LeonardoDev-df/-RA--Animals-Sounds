@@ -74,7 +74,7 @@
     padding: 0.45em;
     border-radius: 5px;
     border: none;
-    width: 14em;
+    width: 15em;
     height: 7em;
     cursor: pointer;
 }
@@ -350,7 +350,7 @@
         border: none;
         background: rgb(167, 7, 7);
         color: rgb(245, 245, 245);
-        width: 9em;
+        width: 11em;
         height: 2em;
     }
 

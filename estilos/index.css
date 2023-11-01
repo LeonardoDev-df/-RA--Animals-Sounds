@@ -237,6 +237,7 @@ span{
     text-align: justify;
     align-items: center;
     margin-top: -20px;
+    font-size: 10px !important;
 }
 
 span {
@@ -344,11 +345,12 @@ span {
         margin-left: 170px;
         text-align: justify;
         align-items: center;
+        font-size: 10px !important;
     }
     
     span{
         color: #eba42d;
-        font-size: 10px;
+        font-size: 10px !important;
     }
     
     /* Estilos para o link de download à direita */
