@@ -177,13 +177,22 @@ span{
 /* Consulta de mídia para celular em modo paisagem (landscape)  deitado */
 @media (min-width: 768px) {
     .container {
-        padding: 10px;
-        margin-top: 4%;
+        padding: 10px ;
+        margin-top: -6% !important;
+        max-width: 650px !important;
+        margin: 0 auto;
     }
 
     h1 {
-        font-size: 14px;
+        font-size: 14px !important;
         margin-bottom: 5px;
+    }
+
+    p {
+        color: #666;
+        font-size: 10px !important;
+        margin-bottom: -5px;
+        font-family: Arial, sans-serif;
     }
     
    
@@ -206,7 +215,7 @@ span{
     /* Estilos para o botão */
 .return-button {
     display: inline-block;
-    margin-top: -1%;
+    margin-top: 2% !important;
     padding: 4px 5px;
     background-color: #007bff;
     color: #fff;
@@ -227,7 +236,7 @@ span{
         margin-top: 41%;
         position: fixed;
         width: 100%;
-        height: 9%;
+        height: 2%;
     }
     
     .links{
@@ -252,7 +261,7 @@ span{
     /* Estilos para os links à esquerda */
     .social-links {
         flex: 1; /* Ocupa todo o espaço disponível à esquerda */
-        font-size: 14px;
+        font-size: 10px;
         display: flex;
         justify-content: space-around;
     }
@@ -265,11 +274,13 @@ span{
     }
     
     .footer-text{
-        height: 2.7rem;
-      margin-left: 220px;
+        margin-top: -75px !important;
+        margin-left: 520px !important;
         border-top: 1px solid var(--text);
         display: flex;
         text-align: justify;
+        text-align: center;
+        font-size: 10px;
         align-items: center;
     }
     
@@ -335,7 +346,7 @@ span{
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0 !important;
+    padding: 25px 0 !important;
     position: fixed;
     width: 100%;
     bottom: 0; /* Posiciona o rodapé na parte inferior da janela */
@@ -350,7 +361,7 @@ span{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -375,12 +386,12 @@ span{
 }
 
 .footer-text {
-    height: 2.7rem;
     border-top: 1px solid var(--text);
     display: flex;
     margin-left: 5px !important;
     text-align: justify;
     align-items: center;
+    margin-top: -50px;
 }
 
 span {
