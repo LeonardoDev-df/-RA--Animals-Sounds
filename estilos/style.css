@@ -14,14 +14,15 @@
 #botao-crocodilo{
     display: none;
     background-image:url("../images/Croc.jpg");
-    background-image: 10px;
+    background-image: 30px;
     background-position: 10% 40%; 
     background-repeat: no-repeat, repeat-x;
     background-position:  center;
     background-size: 190px; 
     margin-left: -14%;
     margin-top: 2%;
-    
+    width: 12em !important; 
+    height: 6em;
 }
 
 #botao-cobra{
@@ -414,9 +415,208 @@
         width: 4em;
         height: 2em;
     }
+
+
+    #botao-golfi{
+        display:  none;
+        background-image:url("../images/Golfin.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 190px; 
+        margin-left: -14%;
+        margin-top: -16px;
+        width: 10em !important; 
+        height: 9em;
+        border-radius: 9px;
+    }
+    .input-golfi {
+        display: none;
+        position: absolute;
+        background-image:url("../images/Doubt.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 40px; 
+        top: 250px;
+        margin-left: -680px;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 3em;
+        height: 4em;
+    }
+
+    
+    .div-golfi {
+        display: none;
+        position: absolute;
+        top: 130px;
+        margin-left: 420px;
+        text-align: justify;     
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        background: rgb(17, 149, 182);
+        color: rgb(245, 245, 245);
+        width: 13em;
+        height: auto;
+    }
+
+    .botao-converter-golfin {
+        position: absolute;
+        background-image:url("../images/AD.png");
+        background-image: 70px;
+        background-position: 20% 80%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 60px; 
+        top: 160px;
+        margin-right: 220px;
+        display:none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 2em;
+    }
+
+    #botao-snake{
+        display:  none;
+        background-image:url("../images/Golfin.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 190px; 
+        margin-left: -14%;
+        margin-top: -16px;
+        width: 10em !important; 
+        height: 9em;
+        border-radius: 9px;
+    }
+    .input-snake {
+        display: none;
+        position: absolute;
+        background-image:url("../images/Doubt.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 40px; 
+        top: 250px;
+        margin-left: -680px;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 3em;
+        height: 4em;
+    }
+
+    
+    .div-snake {
+        display: none;
+        position: absolute;
+        top: 130px;
+        margin-left: 420px;
+        text-align: justify;     
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        background: rgb(17, 149, 182);
+        color: rgb(245, 245, 245);
+        width: 13em;
+        height: auto;
+    }
+
+    .botao-converter-snake {
+        position: absolute;
+        background-image:url("../images/AD.png");
+        background-image: 70px;
+        background-position: 20% 80%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 60px; 
+        top: 160px;
+        margin-right: 220px;
+        display:none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 2em;
+    }
+
+    #botao-panter{
+        display: none;
+        background-image:url("../images/panter.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 190px; 
+        margin-left: 0px;
+        margin-top: 1px;
+        width: 10em !important; 
+        height: 9em;
+        border-radius: 9px;
+    }
+    .input-panter {
+        display: none;
+        position: absolute;
+        background-image:url("../images/Doubt.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 40px; 
+        top: 220px;
+        margin-left: -650px;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 3em;
+        height: 4em;
+    }
+
+    
+    .div-panter {
+        display: none;
+        position: absolute;
+        top: 230px;
+        margin-left: 450px;
+        text-align: justify;     
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        background: rgb(17, 149, 182);
+        color: rgb(245, 245, 245);
+        width: 13em;
+        height: auto;
+    }
+
+    .botao-converter-panter {
+        position: absolute;
+        background-image:url("../images/AD.png");
+        background-image: 70px;
+        background-position: 20% 80%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 60px; 
+        top: 263px;
+        margin-left: 750px;
+        display: none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 2em;
+    }
 }
 
-/* Estilos para dispositivos de tela menor, como smartphones */
+/* Estilos para dispositivos de tela menor, em pé */
 @media (max-width: 740px) {
     .botto {
         height: auto;
@@ -439,7 +639,7 @@
     }
 
     .doubt {
-        display: block;
+        display: none;
         width: 80%;
         margin-bottom: 10px;
     }
@@ -502,6 +702,207 @@
         border: none;
         width: 4em;
         height: 3em;
+    }
+
+    
+#botao-golfi{
+    display:  none;
+    background-image:url("../images/Golfin.jpg");
+    background-image: 10px;
+    background-position: 10% 40%; 
+    background-repeat: no-repeat, repeat-x;
+    background-position:  center;
+    background-size: 190px; 
+    margin-left: 114%;
+    margin-top: 5%;
+    width: 14em !important; 
+    height: 9.5em;
+    border-radius: 9px;
+}
+
+
+    .input-golfi {
+        display:  none;
+        position: absolute;
+        background-image:url("../images/Doubt.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 40px; 
+        top: 250px;
+        margin-left: 180px;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 3em;
+        height: 4em;
+    }
+
+    
+    .div-golfi {
+        display:  none;
+        position: absolute;
+        top: 630px;
+        margin-left: 520px;
+        text-align: justify;     
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        background: rgb(17, 149, 182);
+        color: rgb(245, 245, 245);
+        width: 13em;
+        height: auto;
+    }
+
+    .botao-converter-golfin {
+        position: absolute;
+        background-image:url("../images/AD.png");
+        background-image: 70px;
+        background-position: 20% 80%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 60px; 
+        top: 670px;
+        margin-right: 115px;
+        display: none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 2em;
+    }
+
+    #botao-cobra{
+        display: none;
+        background-image:url("../images/Snake.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 190px; 
+        margin-left: 20px;
+        margin-top: 8px;
+        width: 10em !important; 
+        height: 11em;
+        border-radius: 9px;
+    }
+    .input-snake {
+        display: none;
+        position: absolute;
+        background-image:url("../images/Doubt.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 40px; 
+        top: 270px;
+        margin-left: -270px;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 3em;
+        height: 4em;
+    }
+
+    
+    .div-snake {
+        display: none;
+        position: absolute;
+        top: 690px;
+        margin-left: 0px;
+        text-align: justify;     
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        background: rgb(17, 149, 182);
+        color: rgb(245, 245, 245);
+        width: 13em;
+        height: auto;
+    }
+
+    .botao-converter-snake {
+        position: absolute;
+        background-image:url("../images/AD.png");
+        background-image: 70px;
+        background-position: 20% 80%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 60px; 
+        top: 723px;
+        margin-left: 290px;
+        display:none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 2em;
+    }
+
+    #botao-panter{
+        display: none;
+        background-image:url("../images/panter.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 190px; 
+        margin-left: 260px;
+        margin-top: 10px;
+        width: 10em !important; 
+        height: 9em;
+        border-radius: 9px;
+    }
+    .input-panter {
+        display: none;
+        position: absolute;
+        background-image:url("../images/Doubt.jpg");
+        background-image: 10px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 40px; 
+        top: 270px;
+        margin-left: -20px;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 3em;
+        height: 4em;
+    }
+
+    
+    .div-panter {
+        display: none;
+        position: absolute;
+        top: 690px;
+        margin-left: 250px;
+        text-align: justify;     
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        background: rgb(17, 149, 182);
+        color: rgb(245, 245, 245);
+        width: 13em;
+        height: auto;
+    }
+
+    .botao-converter-panter {
+        position: absolute;
+        background-image:url("../images/AD.png");
+        background-image: 70px;
+        background-position: 20% 80%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 60px; 
+        top: 723px;
+        margin-left: 550px;
+        display: none;
+        padding: 0.45em;
+        border-radius: 4px;
+        border: none;
+        width: 4em;
+        height: 2em;
     }
 }
 

@@ -221,6 +221,7 @@ AFRAME.registerComponent("markerhandler", {
             // Marcador do Cachorro perdido, ocultar o botão do Cachorro
             botaoGolfi.style.display = "none";
             inputGolfi.style.display = "none";
+            botaoConverterGolfin.style.display = "none";
             divGolfi.style.display = "none";
             const soundEl = document.getElementById("golfi-sound");
             
@@ -241,6 +242,7 @@ AFRAME.registerComponent("markerhandler", {
             // Marcador da Pantera Negra perdido, ocultar o botão do Pantera
             botaoPanter.style.display = "none";
             inputPanter.style.display = "none";
+            botaoConverterPanter.style.display = "none";
             divPanter.style.display = "none";
             const soundEl = document.getElementById("panter-sound");
             
