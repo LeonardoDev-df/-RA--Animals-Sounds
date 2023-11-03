@@ -1,7 +1,7 @@
 /* Estilos gerais para a página de instruções */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #000; /* Corrigido para fundo preto */
     text-align: center;
     margin: 0;
     padding: 0;
@@ -9,27 +9,31 @@ body {
     flex-direction: column;
     background-image: url("../images/back.jpg");
     min-height: 100vh;
-    background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
-    background-position: center center; /* Centraliza a imagem vertical e horizontalmente */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
+span {
+    color: #eba42d;
+}
 .container {
-    max-width: 800px !important;
+    max-width: 670px !important;
     margin: 0 auto;
-    padding: 101px !important;
+    padding: 111px ;
     box-sizing: border-box;
+    margin-top: -70px;
 }
 
 h1 {
     color: #007bff;
-    font-size: 28px !important;
+    font-size: 22px !important;
     margin-bottom: 5px;
 }
 
 p {
     color: #666;
-    font-size: 16px;
+    font-size: 13px;
     margin-bottom: 5px;
     font-family: Arial, sans-serif;
 }
@@ -43,31 +47,31 @@ p {
 }
 
 .animal-image {
-    width: 38%; /* Define a largura desejada para cada imagem (48% para duas imagens lado a lado) */
+    width: 20%;
     margin-bottom: 10px;
-    margin-right: 2%; /* Espaço horizontal entre as imagens */
-    text-align: center; /* Centraliza o conteúdo dentro do contêiner */
+    margin-right: 2%;
+    text-align: center;
 }
 
 .animal-image:last-child {
-    margin-right: 0; /* Remove a margem direita da última imagem */
+    margin-right: 0;
 }
 
 .animal-image img {
-    max-width: 100%; /* Define a largura máxima para as imagens */
-    height: auto; /* Mantém a proporção original das imagens */
+    max-width: 100%;
+    height: auto;
 }
 
 .animal-button {
     display: block;
     margin: 0 auto;
-    padding: 5px 20px;
+    padding: 5px 10px;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    font-size: 13px !important;
+    font-size: 10px !important;
     cursor: pointer;
 }
 
@@ -84,334 +88,76 @@ p {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    font-size: 16px;
+    font-size: 10px;
     border: none;
     cursor: pointer;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    margin-top: -74px !important;
+}
+
+/* Estilos para o link de download à direita */
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 10px !important;
+}
+
+.footer-content a:hover {
+    color: #007bff;
 }
 
 .return-button:hover {
     background-color: #0056b3;
 }
 
-/* Estilos para o rodapé */
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0 !important;
-    margin-top: 42%;
-    position: fixed;
-    width: 100%;
-    height: 7%;
-}
-
-.links{
-    display: flex;
-}
-
-.footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Estilos para o texto central */
-.footer-content p {
-    flex: 1; /* Ocupa todo o espaço disponível no centro */
-    font-size: 16px !important;
- 
-}
-
-/* Estilos para os links à esquerda */
-.social-links {
-    flex: 1; /* Ocupa todo o espaço disponível à esquerda */
-    font-size: 24px !important;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.social-links a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: -1020%;
-    margin-top: -20% !important;
-    
-}
-
-.footer-text{
-    height: 6.4rem !important;
-    border-top: 1px solid var(--text);
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    margin-top: -3%;
-}
-
-span{
-    color: #eba42d;
-    font-size: 16px !important;
-}
-
-/* Estilos para o link de download à direita */
-.footer-content a {
-    flex: 1; /* Ocupa todo o espaço disponível à direita */
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-    transition: color 0.3s ease;
-    text-align: right;
-    margin-top: -3%;
-    text-align: center;
-}
-
-.footer-content a:hover {
-    color: #007bff;
-}
-
-
-
-/* Consulta de mídia para celular em modo paisagem (landscape)  deitado */
-@media (min-width: 768px) {
-    .container {
-        padding: 10px ;
-        margin-top: -6% !important;
-        max-width: 650px !important;
-        margin: 0 auto;
+/* Estilos para telas menores (modo retrato) */
+@media (max-width: 768px) {
+    .container {        
+        padding: 85px !important;
+        margin-top: 10px;
     }
 
     h1 {
-        font-size: 14px !important;
-        margin-bottom: 5px;
+        font-size: 22px !important;
     }
 
-    p {
-        color: #666;
-        font-size: 10px !important;
-        margin-bottom: -5px;
-        font-family: Arial, sans-serif;
-    }
-    
-   
-    .animal-images {
-        margin-bottom: 20px;
-    }
-
-    .animal-image {
-        width: 20% !important;
-        margin-bottom: 0px;
-        margin-top: 1%;
-        margin-right: 2%;
-    }
-
-    .animal-button {
-        padding: 5px 5px;
-        font-size: 10px;
-    }
-
-    /* Estilos para o botão */
-.return-button {
-    display: inline-block;
-    margin-top: 2% !important;
-    padding: 4px 5px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    font-size: 12px;
-    border: none;
-    cursor: pointer;
-}
-
-     /* Estilos para o rodapé */
-     .footer {
+    .footer {
         background-color: #333;
         color: #fff;
-        text-align: center;
-        padding: 10px 0;
-        margin-top: 41%;
-        position: fixed;
-        width: 100%;
-        height: 2%;
+        
+        margin-top: 13px !important;
     }
-    
-    .links{
-        display: flex;
-    }
-    
-    .footer-content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    /* Estilos para o texto central */
-    .footer-content p {
-        font-size: 10px;
-     
-    }
-    
-    /* Estilos para os links à esquerda */
-    .social-links {
-        flex: 1; /* Ocupa todo o espaço disponível à esquerda */
-        font-size: 10px;
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    .social-links a {
-        color: #fff;
-        text-decoration: none;
-        margin-top: 10px !important;
-        margin-left: -1220px !important;
-    }
-    
-    .footer-text{
-        margin-top: -70px !important;
-        margin-right: -120px !important;
-        border-top: 1px solid var(--text);
-        display: flex;
-        text-align: justify;
-        text-align: center;
-        font-size: 10px !important;
-        align-items: center;
-    }
-    
-    span{
-        color: #eba42d;
-        margin-top: -3px;
-        font-size: 10px !important;
-    }
-    
+
     /* Estilos para o link de download à direita */
     .footer-content a {
-        flex: 1; /* Ocupa todo o espaço disponível à direita */
         color: #fff;
         text-decoration: none;
         font-weight: bold;
-        font-size: 10px;
-        margin-top: -10px;
         transition: color 0.3s ease;
-        margin-left: 50px !important;
+        font-size: 12px !important;
+       
     }
-    
+
     .footer-content a:hover {
         color: #007bff;
     }
-}
- 
-
-/* Consulta de mídia para dispositivos em modo retrato */
-@media screen and (max-width: 640px) and (orientation: portrait) {
-    /* Estilos para dispositivos em modo retrato com largura máxima de 640px */
-    
-    .container {
-        max-width: 400px;
-        margin: 0 auto;
-        padding: 25px !important;
-        box-sizing: border-box;
-        margin-top: 18%;
-    }
-
-    .content {
-        padding: 40px;
-    }
-
-    h1 {
-        font-size: 22px;
-        height: auto;
-        margin-bottom: 10px;
-    }
 
     p {
-        font-size: 16px;
-        height: auto;
+        font-size: 16px !important;
     }
 
-    .button {
+    .animal-image {
+        width: 48%; /* Ajuste a largura para duas imagens lado a lado */
+    }
+
+    .animal-button {
         padding: 5px 10px;
-        font-size: 16px;
+        font-size: 16px !important;
     }
-}
-
-/* Estilos para o rodapé */
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 25px 0 !important;
-    position: fixed;
-    width: 100%;
-    bottom: 0; /* Posiciona o rodapé na parte inferior da janela */
-}
-
-.links {
-    display: flex;
-}
-
-.footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Estilos para o texto central do rodapé */
-.footer-content p {
-    font-size: 10px;
-}
-
-/* Estilos para os links à esquerda */
-.social-links {
-    flex: 1;
-    font-size: 24px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.social-links a {
-    color: #fff;
-    text-decoration: none;
-    margin-top: 10px !important;
-    align-items: flex-start;
-}
-
-.footer-text {
-    border-top: 1px solid var(--text);
-    display: flex;
-    margin-left: 5px !important;
-    text-align: justify;
-    align-items: center;
-    margin-top: -50px;
-}
-
-span {
-    color: #eba42d;
-    font-size: 10px;
-    margin-top: -5px;
-}
-
-/* Estilos para o link de download à direita */
-.footer-content a {
-    flex: 1;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 12px;
-    transition: color 0.3s ease;
-    text-align: right;
-    margin-left: 50px !important;
-}
-
-.footer-content a:hover {
-    color: #007bff;
 }
