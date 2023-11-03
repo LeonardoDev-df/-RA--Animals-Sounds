@@ -452,7 +452,7 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 40px; 
-        top: 270px;
+        top: 250px;
         margin-left: -680px;
         padding: 0.45em;
         border-radius: 4px;
@@ -465,7 +465,7 @@
     .div-golfi {
         display: none;
         position: absolute;
-        top: 210px;
+        top: 190px;
         margin-left: 420px;
         text-align: justify;     
         padding: 0.45em;
@@ -485,7 +485,7 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 240px;
+        top: 220px;
         margin-right: 210px;
         display: none;
         padding: 0.45em;
@@ -506,7 +506,7 @@
         margin-left: -64%;
         margin-top: -26px;
         width: 10em !important; 
-        height: 11em;
+        height: 10em;
         border-radius: 9px;
     }
     .input-snake {
@@ -524,14 +524,14 @@
         border-radius: 4px;
         border: none;
         width: 3em;
-        height: 4em;
+        height: 3em;
     }
 
     
     .div-snake {
         display: none;
         position: absolute;
-        top: 210px;
+        top: 190px;
         margin-left: 420px;
         text-align: justify;     
         padding: 0.45em;
@@ -551,7 +551,7 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 250px;
+        top: 230px;
         margin-right: 210px;
         display: none;
         padding: 0.45em;
@@ -572,7 +572,7 @@
         margin-left: -64%;
         margin-top: -26px;
         width: 10em !important; 
-        height: 9em;
+        height: 8em;
         border-radius: 9px;
     }
     .input-panter {
@@ -584,7 +584,7 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 40px; 
-        top: 250px;
+        top: 240px;
         margin-left: -650px;
         padding: 0.45em;
         border-radius: 4px;
@@ -597,7 +597,7 @@
     .div-panter {
         display: none;
         position: absolute;
-        top: 210px;
+        top: 190px;
         margin-left: 450px;
         text-align: justify;     
         padding: 0.45em;
@@ -617,7 +617,7 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 240px;
+        top: 220px;
         margin-right: 190px;
         display: none;
         padding: 0.45em;
@@ -638,7 +638,7 @@
 
     .botao {
         position: absolute;
-        top: 70px;
+        top: 90px;
         margin-right: 5%;
         display: none;
         padding: 0.45em;
@@ -663,6 +663,20 @@
         margin-bottom: 10px;
     }
 
+    #botao-crocodilo{
+        display: none;
+        background-image:url("../images/Croc.jpg");
+        background-image: 30px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 190px; 
+        margin-left: -34%;
+        margin-top: -3%;
+        width: 12em !important; 
+        height: 6em;
+    }
+
     .input-croc {
         display: none;
         position: absolute;
@@ -684,8 +698,8 @@
     .div-croc {
         display: none;
         position: absolute;
-        top: 440px;
-        margin-left: 180px;
+        top: 480px;
+        margin-left: 190px;
         text-align: justify;     
         padding: 0.45em;
         border-radius: 4px;
@@ -704,9 +718,9 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 70px; 
-        top: 390px;
-        margin-left: 170px;
-        display: block;
+        top: 435px;
+        margin-left: 180px;
+        display: none;
         padding: 0.45em;
         border-radius: 4px;
         border: none;
@@ -723,8 +737,8 @@
     background-repeat: no-repeat, repeat-x;
     background-position:  center;
     background-size: 190px; 
-    margin-left: 114%;
-    margin-top: 5%;
+    margin-left: -34%;
+    margin-top: -3%;
     width: 14em !important; 
     height: 9.5em;
     border-radius: 9px;
@@ -739,22 +753,22 @@
         background-position: 10% 40%; 
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
-        background-size: 40px; 
-        top: 250px;
-        margin-left: 180px;
+        background-size: 50px; 
+        top: 630px;
+        margin-left: -270px;
         padding: 0.45em;
         border-radius: 4px;
         border: none;
-        width: 3em;
-        height: 4em;
+        width: 4em;
+        height: 4.5em;
     }
 
     
     .div-golfi {
         display:  none;
         position: absolute;
-        top: 630px;
-        margin-left: 520px;
+        top: 550px;
+        margin-left: 150px;
         text-align: justify;     
         padding: 0.45em;
         border-radius: 4px;
@@ -773,8 +787,8 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 670px;
-        margin-right: 115px;
+        top: 518px;
+        margin-left: 170px;
         display: none;
         padding: 0.45em;
         border-radius: 4px;
@@ -791,8 +805,8 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 190px; 
-        margin-left: 20px;
-        margin-top: 8px;
+        margin-left: -34%;
+        margin-top: -3%;
         width: 10em !important; 
         height: 11em;
         border-radius: 9px;
@@ -806,7 +820,7 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 40px; 
-        top: 270px;
+        top: 630px;
         margin-left: -270px;
         padding: 0.45em;
         border-radius: 4px;
@@ -819,8 +833,8 @@
     .div-snake {
         display: none;
         position: absolute;
-        top: 690px;
-        margin-left: 0px;
+        top: 540px;
+        margin-left: 150px;
         text-align: justify;     
         padding: 0.45em;
         border-radius: 4px;
@@ -839,9 +853,9 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 723px;
-        margin-left: 290px;
-        display:none;
+        top: 508px;
+        margin-left: 170px;
+        display: none;
         padding: 0.45em;
         border-radius: 4px;
         border: none;
@@ -857,8 +871,8 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 190px; 
-        margin-left: 260px;
-        margin-top: 10px;
+        margin-left: -34%;
+        margin-top: -3%;
         width: 10em !important; 
         height: 9em;
         border-radius: 9px;
@@ -872,8 +886,8 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 40px; 
-        top: 270px;
-        margin-left: -20px;
+        top: 630px;
+        margin-left: -270px;
         padding: 0.45em;
         border-radius: 4px;
         border: none;
@@ -885,8 +899,8 @@
     .div-panter {
         display: none;
         position: absolute;
-        top: 690px;
-        margin-left: 250px;
+        top: 540px;
+        margin-left: 150px;
         text-align: justify;     
         padding: 0.45em;
         border-radius: 4px;
@@ -905,8 +919,8 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 723px;
-        margin-left: 550px;
+        top: 508px;
+        margin-left: 170px;
         display: none;
         padding: 0.45em;
         border-radius: 4px;
