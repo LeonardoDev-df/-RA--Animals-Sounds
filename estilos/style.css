@@ -348,18 +348,30 @@
         display: block;
         padding: 0.45em;
         border-radius: 4px;
-        border: none;
-        background: rgb(167, 7, 7);
-        color: rgb(245, 245, 245);
+        border: block;
         width: 11em;
         height: 2em;
+    }
+
+    #botao-crocodilo{
+        display: none;
+        background-image:url("../images/Croc.jpg");
+        background-image: 30px;
+        background-position: 10% 40%; 
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 190px; 
+        margin-left: -64%;
+        margin-top: -3%;
+        width: 12em !important; 
+        height: 6em;
     }
 
     .sair {
         display: block;
         top: 20px;
         width: 14%;
-        height: 11%;
+        height: 13%;
         margin-right: 10%;
         margin-bottom: 10px;
     }
@@ -386,7 +398,7 @@
     .div-croc {
         display: none;
         position: absolute;
-        top: 130px;
+        top: 230px;
         margin-left: 420px;
         text-align: justify;     
         padding: 0.45em;
@@ -406,7 +418,7 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 160px;
+        top: 260px;
         margin-right: 210px;
         display: none;
         padding: 0.45em;
@@ -425,8 +437,8 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 190px; 
-        margin-left: -14%;
-        margin-top: -16px;
+        margin-left: -64%;
+        margin-top: -26px;
         width: 10em !important; 
         height: 9em;
         border-radius: 9px;
@@ -440,7 +452,7 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 40px; 
-        top: 250px;
+        top: 290px;
         margin-left: -680px;
         padding: 0.45em;
         border-radius: 4px;
@@ -453,7 +465,7 @@
     .div-golfi {
         display: none;
         position: absolute;
-        top: 130px;
+        top: 230px;
         margin-left: 420px;
         text-align: justify;     
         padding: 0.45em;
@@ -473,7 +485,7 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 160px;
+        top: 260px;
         margin-right: 210px;
         display: none;
         padding: 0.45em;
@@ -483,18 +495,18 @@
         height: 2em;
     }
 
-    #botao-snake{
+    #botao-cobra{
         display:  none;
-        background-image:url("../images/Golfin.jpg");
+        background-image:url("../images/Snake.jpg");
         background-image: 10px;
         background-position: 10% 40%; 
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 190px; 
-        margin-left: -14%;
-        margin-top: -16px;
+        margin-left: -64%;
+        margin-top: -26px;
         width: 10em !important; 
-        height: 9em;
+        height: 11em;
         border-radius: 9px;
     }
     .input-snake {
@@ -506,7 +518,7 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 40px; 
-        top: 250px;
+        top: 270px;
         margin-left: -680px;
         padding: 0.45em;
         border-radius: 4px;
@@ -519,7 +531,7 @@
     .div-snake {
         display: none;
         position: absolute;
-        top: 130px;
+        top: 230px;
         margin-left: 420px;
         text-align: justify;     
         padding: 0.45em;
@@ -539,7 +551,7 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 160px;
+        top: 270px;
         margin-right: 210px;
         display: none;
         padding: 0.45em;
@@ -557,8 +569,8 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 190px; 
-        margin-left: 0px;
-        margin-top: 1px;
+        margin-left: -64%;
+        margin-top: -26px;
         width: 10em !important; 
         height: 9em;
         border-radius: 9px;
@@ -572,7 +584,7 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 40px; 
-        top: 220px;
+        top: 270px;
         margin-left: -650px;
         padding: 0.45em;
         border-radius: 4px;
@@ -585,8 +597,8 @@
     .div-panter {
         display: none;
         position: absolute;
-        top: 130px;
-        margin-left: 420px;
+        top: 230px;
+        margin-left: 450px;
         text-align: justify;     
         padding: 0.45em;
         border-radius: 4px;
@@ -605,8 +617,8 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 160px;
-        margin-right: 210px;
+        top: 260px;
+        margin-right: 190px;
         display: none;
         padding: 0.45em;
         border-radius: 4px;
@@ -631,9 +643,7 @@
         display: none;
         padding: 0.45em;
         border-radius: 4px;
-        border: none;
-        background: rgb(167, 7, 7);
-        color: rgb(245, 245, 245);
+        border: block;
         width: 10em;
         height: 3em;
     }
@@ -654,7 +664,7 @@
     }
 
     .input-croc {
-        display: none;
+        display: block;
         position: absolute;
         background-image:url("../images/Doubt.jpg");
         background-image: 10px;
@@ -696,7 +706,7 @@
         background-size: 70px; 
         top: 390px;
         margin-left: 170px;
-        display: none;
+        display: block;
         padding: 0.45em;
         border-radius: 4px;
         border: none;

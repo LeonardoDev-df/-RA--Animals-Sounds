@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column; /* Para usar o sticky footer */
     min-height: 100vh; /* Preenche a altura da viewport */
-    background-image: url("../images/back.jpg");
+    background-image: url("../images/back.jpg") !important;
     background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
     background-position: center center; /* Centraliza a imagem vertical e horizontalmente */
     background-repeat: no-repeat; /* Evita repetição da imagem */
@@ -21,10 +21,10 @@ body {
     box-sizing: border-box;
 }
 
-     
-span{
+span {
     color: #eba42d;
 }
+
 /* Estilos para o conteúdo principal */
 .content {
     flex: 1; /* Cresce para preencher o espaço disponível */
@@ -82,7 +82,7 @@ p {
     align-items: center;
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    margin-top: 117px !important;
 }
 
 .footer-content {
@@ -91,12 +91,12 @@ p {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-top: 10px;
 }
 
 .footer-text {
     flex: 1;
     text-align: left;
-  
 }
 
 .social-links {
@@ -104,10 +104,12 @@ p {
     text-align: right;
 }
 
-
-
 /* Estilos para telas menores (modo retrato e paisagem) */
 @media (max-width: 768px), (max-height: 768px) {
+    body {
+        background-image: none; /* Remova a imagem de fundo para telas menores */
+    }
+
     .container {
         text-align: center; /* Centralizar o conteúdo */
         padding: 90px;
@@ -117,7 +119,6 @@ p {
         display: flex;
         flex-direction: column;
         text-align: center;
-
     }
 
     .footer {
@@ -128,15 +129,13 @@ p {
         color: #fff;
         padding: 58px;
         height: 5px;
-        margin-top: 92px;
-
+        margin-top: 122px !important;
     }
-   
-    
+
     .footer-text {
         flex: 1;
         text-align: left;
-        font-size: 12px !important; 
+        font-size: 12px !important;
     }
 
     .social-links {
@@ -153,7 +152,7 @@ p {
         margin-bottom: 20px;
         font-family: Arial, sans-serif;
     }
-    
+
     p {
         color: #666;
         font-size: 16px;
@@ -165,11 +164,11 @@ p {
     .footer-content a {
         color: #fff;
         text-decoration: none;
-        font-weight: bold;   
+        font-weight: bold;
         transition: color 0.3s ease;
-        font-size: 12px !important; 
+        font-size: 12px !important;
     }
-    
+
     .footer-content a:hover {
         color: #007bff;
     }
