@@ -324,6 +324,10 @@
         width: 4em;
         height: 2em;
     }
+
+    body {
+        line-height: 1.6; /* Ajuste o espaçamento entre linhas conforme necessário */
+    }
 }
 
 /* Estilos para dispositivos de tela menor, em pé */
@@ -332,6 +336,10 @@
         height: auto;
         flex-direction: column;
         padding: 1em;
+    }
+
+    body {
+        line-height: 1.6; /* Ajuste o espaçamento entre linhas conforme necessário */
     }
 
     .botao {

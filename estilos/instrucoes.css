@@ -17,26 +17,9 @@ body {
 span {
     color: #eba42d;
 }
-.container {
-    max-width: 670px !important;
-    margin: 0 auto;
-    padding: 111px ;
-    box-sizing: border-box;
-    margin-top: -70px;
-}
 
-h1 {
-    color: #007bff;
-    font-size: 22px !important;
-    margin-bottom: 5px;
-}
 
-p {
-    color: #666;
-    font-size: 13px;
-    margin-bottom: 5px;
-    font-family: Arial, sans-serif;
-}
+
 
 .animal-images {
     margin-top: 2%;
@@ -93,24 +76,7 @@ p {
     cursor: pointer;
 }
 
-.footer {
-    background-color: #333;
-    color: #fff;
-    margin-top: 163px !important;
-}
 
-/* Estilos para o link de download à direita */
-.footer-content a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    font-size: 10px !important;
-}
-
-.footer-content a:hover {
-    color: #007bff;
-}
 
 .return-button:hover {
     background-color: #0056b3;
@@ -119,13 +85,30 @@ p {
 /* Estilos para telas menores (modo retrato) */
 @media (max-width: 768px) {
     .container {        
-        padding: 85px !important;
-        margin-top: 10px;
+        padding: 88.03px;
+        margin-top: 8px;
 
     }
 
-    h1 {
-        font-size: 22px !important;
+    .footer-container{
+        padding: 5px ;
+        max-width: 970px ;
+        margin: 0 auto; /* Centraliza o container na tela */
+    }
+    
+
+    .text-font, h1{  
+        color: #007bff ;
+        font-size: 20px ;
+        margin-bottom: 0px;   
+        font-family: 'Comic Sans MS', cursive ;
+    }
+
+    .text-font, p {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 0px;
+        font-family: 'Comic Sans MS', cursive !important
     }
 
     .footer {
@@ -149,13 +132,124 @@ p {
         color: #007bff;
     }
 
-    p {
-        font-size: 16px !important;
+    /* Estilos para o botão */
+    .return-button {
+        display: inline-block;
+        padding: 8px 10px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+    }
+
+    
+    .animal-images {
+        margin-top: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between!important;
+        margin-bottom: 20px;
     }
 
     .animal-image {
         width: 48%; /* Ajuste a largura para duas imagens lado a lado */
     }
+
+
+    .animal-button {
+        padding: 5px 10px;
+        font-size: 16px !important;
+       
+    }
+}
+
+
+/* Estilos para telas menores (modo retrato) */
+@media (min-width: 844px) or (max-height: 390px)  {
+    .container {
+        max-width: 670px ;
+        margin: 0 auto;
+        padding: 111px ;
+        box-sizing: border-box;
+        margin-top: -70px;
+        padding: 78px ;
+       
+        margin: 0 auto; /* Centraliza o container na tela */
+    }
+
+    .footer-container{
+        padding: 5px ;
+        max-width: 970px ;
+        margin: 0 auto; /* Centraliza o container na tela */
+    }
+    
+
+    .text-font, h1{  
+        color: #007bff ;
+        font-size: 20px ;
+        margin-bottom: 0px;   
+        font-family: 'Comic Sans MS', cursive ;
+    }
+
+    .text-font, p {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 0px;
+        font-family: 'Comic Sans MS', cursive !important
+    }
+
+    .footer {
+        background-color: #333;
+        color: #fff;
+        
+        margin-top: 13px !important;
+    }
+
+    /* Estilos para o link de download à direita */
+    .footer-content a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+        font-size: 12px !important;
+       
+    }
+
+    .footer-content a:hover {
+        color: #007bff;
+    }
+
+    /* Estilos para o botão */
+    .return-button {
+        display: inline-block;
+        padding: 8px 10px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+    }
+
+    
+    .animal-images {
+        margin-top: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between!important;
+        margin-bottom: 20px;
+    }
+
+    .animal-image {
+        width: 38%; /* Ajuste a largura para duas imagens lado a lado */
+    }
+
 
     .animal-button {
         padding: 5px 10px;
@@ -163,26 +257,40 @@ p {
     }
 }
 
+@media (min-width: 1004px) {
 
-@media (min-width: 768px) {
-    .container {        
-        padding: 145px !important;
-        margin-top: 10px;
-        max-width: 970px !important;
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.6; /* Ajuste o espaçamento entre linhas conforme necessário */
     }
 
-    
-h1 {
-    color: #007bff;
-    font-size: 28px !important;
-    margin-bottom: 5px;
-}
+    .container {
+        max-width: 670px !important;
+        margin: 0 auto;
+        padding: 111px ;
+        box-sizing: border-box;
+        margin-top: -70px;
+        padding: 78px ;
+       
+        margin: 0 auto; /* Centraliza o container na tela */
+    }
+  
+    .text-font{  
+        color: #007bff !important;
+        font-size: 16px ;
+        margin-bottom: 0px;   
+        font-family: 'Comic Sans MS', cursive !important;
+    }
 
-p {
+    .text-font, p {
     color: #666;
-    font-size: 16px;
-    margin-bottom: 5px;
-    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 0px;
+    font-family: 'Comic Sans MS', cursive !important
 }
 
 .animal-images {
@@ -240,10 +348,56 @@ p {
     cursor: pointer;
 }
 
+.footer-container{
+    padding: 5px ;
+   
+    max-width: 970px ;
+    margin: 0 auto; /* Centraliza o container na tela */
+}
+
+.footer-text{
+    text-align: center;
+   
+}
+
 .footer {
     background-color: #333;
     color: #fff;
-    margin-top: 124px !important;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-text p {
+    margin: 0;
+    text-align: center; /* Centraliza o texto no meio */
+}
+
+
+
+.link{
+    display: flex;
+    justify-content: space-around;
+}
+/* Estilos para o link de download à direita */
+.footer-content a {
+    color: #fff;
+   display: flex;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 13px ;
+}
+
+.footer-content a:hover {
+    color: #007bff;
 }
 
 }
