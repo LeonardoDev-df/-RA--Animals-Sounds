@@ -1,215 +1,25 @@
-/* Estilos gerais para a página */
+/* Estilos gerais para a página de instruções */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #000; /* Corrigido para fundo preto */
     text-align: center;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column; /* Para usar o sticky footer */
-    min-height: 100vh; /* Preenche a altura da viewport */
-    background-image: url("../images/back.jpg") !important;
-    background-size: cover; /* Redimensiona a imagem para cobrir todo o corpo */
-    background-position: center center; /* Centraliza a imagem vertical e horizontalmente */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 125px;
-    box-sizing: border-box;
+    flex-direction: column;
+    background-image: url("../images/back.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 span {
     color: #eba42d;
 }
 
-/* Estilos para o conteúdo principal */
-.content {
-    flex: 1; /* Cresce para preencher o espaço disponível */
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px;
-    box-sizing: border-box;
-}
-
-h1 {
-    color: #007bff;
-    font-size: 32px;
-    margin-bottom: 20px;
-    font-family: Arial, sans-serif;
-}
-
-p {
-    color: #666;
-    font-size: 18px;
-    margin-bottom: 20px;
-    font-family: Arial, sans-serif;
-}
-
-.instruction-link {
-    color: #007bff; /* Cor do link */
-    text-decoration: none; /* Remova a sublinhado padrão */
-    font-weight: bold; /* Torne o texto em negrito */
-    transition: color 0.3s ease; /* Efeito de transição de cor suave */
-}
-
-.instruction-link:hover {
-    color: #0056b3; /* Cor diferente ao passar o mouse sobre o link */
-}
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    margin-top: 163px !important;
-}
-
-/* Estilos para o link de download à direita */
-.footer-content a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    font-size: 10px !important;
-}
-
-.footer-content a:hover {
-    color: #007bff;
-}
 
 
-/* Estilos para o botão */
-.button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    font-size: 20px;
-}
-
-.button:hover {
-    background-color: #0056b3;
-}
-
-
-
-/* Estilos para telas menores (modo retrato e paisagem) */
-@media (max-width: 768px), (max-height: 768px) {
-    body {
-        background-image: none; /* Remova a imagem de fundo para telas menores */
-    }
-
-    .container {
-        text-align: center; /* Centralizar o conteúdo */
-        padding: 90px;
-    }
-
-    .footer-content {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #333;
-        color: #fff;
-        padding: 58px;
-        height: 5px;
-        margin-top: 122px !important;
-    }
-
-    .footer-text {
-        flex: 1;
-        text-align: left;
-        font-size: 12px !important;
-    }
-
-    .social-links {
-        margin-top: 4px !important;
-    }
-
-    .social-links a {
-        margin: 0 10px;
-    }
-
-    h1 {
-        color: #007bff;
-        font-size: 28px;
-        margin-bottom: 20px;
-        font-family: Arial, sans-serif;
-    }
-
-    p {
-        color: #666;
-        font-size: 16px;
-        margin-bottom: 20px;
-        font-family: Arial, sans-serif;
-    }
-
-    /* Estilos para o link de download à direita */
-    .footer-content a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.3s ease;
-        font-size: 12px !important;
-    }
-
-    .footer-content a:hover {
-        color: #007bff;
-    }
-}
-
-/* Estilos gerais */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.button:hover {
-    background-color: #0056b3;
-}
-
-
-@media (min-width: 1924px) {
-    .container {        
-        padding: 145px !important;
-        margin-top: 10px;
-        max-width: 970px !important;
-    }
-
-    
-h1 {
-    color: #007bff;
-    font-size: 28px !important;
-    margin-bottom: 5px;
-}
-
-p {
-    color: #666;
-    font-size: 16px;
-    margin-bottom: 5px;
-    font-family: Arial, sans-serif;
-}
 
 .animal-images {
     margin-top: 2%;
@@ -220,7 +30,7 @@ p {
 }
 
 .animal-image {
-    width: 30%;
+    width: 20%;
     margin-bottom: 10px;
     margin-right: 2%;
     text-align: center;
@@ -244,7 +54,7 @@ p {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    font-size: 14px !important;
+    font-size: 10px !important;
     cursor: pointer;
 }
 
@@ -261,15 +71,284 @@ p {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    font-size: 14px;
+    font-size: 12px;
     border: none;
     cursor: pointer;
+}
+
+
+
+.return-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para telas menores (modo retrato) */
+@media (max-width: 768px) {
+    .container {        
+        padding: 78.03px;
+        margin-top: 108px;
+
+    }
+
+    .footer-container{
+        padding: 5px ;
+        max-width: 970px ;
+        margin: 0 auto; /* Centraliza o container na tela */
+    }
+    
+
+    .text-font, h1{  
+        color: #007bff ;
+        font-size: 20px ;
+        margin-bottom: 0px;   
+        font-family: 'Comic Sans MS', cursive ;
+    }
+
+    .text-font, p {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 0px;
+        font-family: 'Comic Sans MS', cursive !important
+    }
+
+    .footer {
+        background-color: #333;
+        color: #fff;
+        
+        margin-top: 174px !important;
+    }
+
+    /* Estilos para o link de download à direita */
+    .footer-content a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+        font-size: 12px !important;
+       
+    }
+
+    .footer-content a:hover {
+        color: #007bff;
+    }
+
+    .instruction-link {
+        color: #007bff; /* Cor do link */
+        text-decoration: none; /* Remova a sublinhado padrão */
+        font-weight: bold; /* Torne o texto em negrito */
+        transition: color 0.3s ease; /* Efeito de transição de cor suave */
+    }
+    
+    .instruction-link:hover {
+        color: #0056b3; /* Cor diferente ao passar o mouse sobre o link */
+    }
+    
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    
+    .button:hover {
+        background-color: #0056b3;
+    }
+}
+
+
+/* Estilos para telas menores (modo retrato) */
+@media (min-width: 844px) or (max-height: 390px)  {
+    .container {
+        max-width: 610px ;
+        margin: 0 auto;
+        padding: 111px ;
+        box-sizing: border-box;
+        margin-top: -70px;
+        padding: 78px ;
+       
+        margin: 0 auto; /* Centraliza o container na tela */
+    }
+
+    .footer-container{
+        padding: 5px ;
+        max-width: 970px ;
+        margin: 0 auto; /* Centraliza o container na tela */
+    }
+    
+
+    .text-font, h1{  
+        color: #007bff ;
+        font-size: 20px ;
+        margin-bottom: 0px;   
+        font-family: 'Comic Sans MS', cursive ;
+    }
+
+    .text-font, p {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 0px;
+        font-family: 'Comic Sans MS', cursive;
+    }
+
+    .footer {
+        background-color: #333;
+        color: #fff;
+        
+        margin-top: 13px !important;
+    }
+
+    /* Estilos para o link de download à direita */
+    .footer-content a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+        font-size: 12px !important;
+       
+    }
+
+    .footer-content a:hover {
+        color: #007bff;
+    }
+
+    .instruction-link {
+        color: #007bff; /* Cor do link */
+        text-decoration: none; /* Remova a sublinhado padrão */
+        font-weight: bold; /* Torne o texto em negrito */
+        transition: color 0.3s ease; /* Efeito de transição de cor suave */
+    }
+    
+    .instruction-link:hover {
+        color: #0056b3; /* Cor diferente ao passar o mouse sobre o link */
+    }
+    
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    
+    .button:hover {
+        background-color: #0056b3;
+    }
+}
+
+@media (min-width: 1004px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.6; /* Ajuste o espaçamento entre linhas conforme necessário */
+    }
+
+    .container {
+        max-width: 690px !important;
+        margin: 0 auto;
+        padding: 111px ;
+        box-sizing: border-box;
+        margin-top: -70px;
+        padding: 158px ;
+        margin: 0 auto; /* Centraliza o container na tela */
+    }
+  
+    .text-font, h1{  
+        color: #007bff !important;
+        font-size: 20px ;
+        margin-bottom: 0px;   
+        font-family: 'Comic Sans MS', cursive !important;
+    }
+
+    .text-font, p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 0px;
+    font-family: 'Comic Sans MS', cursive !important
+}
+
+.footer-container{
+    padding: 5px ;
+   
+    max-width: 970px ;
+    margin: 0 auto; /* Centraliza o container na tela */
+}
+
+.footer-text{
+    text-align: center;
+   
 }
 
 .footer {
     background-color: #333;
     color: #fff;
-    margin-top: 352px !important;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-text p {
+    margin: 0;
+    text-align: center; /* Centraliza o texto no meio */
+}
+
+.link{
+    display: flex;
+    justify-content: space-around;
+}
+/* Estilos para o link de download à direita */
+.footer-content a {
+    color: #fff;
+   display: flex;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 13px ;
+}
+
+.footer-content a:hover {
+    color: #007bff;
+}
+
+
+.instruction-link {
+    color: #007bff; /* Cor do link */
+    text-decoration: none; /* Remova a sublinhado padrão */
+    font-weight: bold; /* Torne o texto em negrito */
+    transition: color 0.3s ease; /* Efeito de transição de cor suave */
+}
+
+.instruction-link:hover {
+    color: #0056b3; /* Cor diferente ao passar o mouse sobre o link */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #0056b3;
 }
 
 }
