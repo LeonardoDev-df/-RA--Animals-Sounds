@@ -75,7 +75,7 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 190px; 
-        margin-left: -30%;
+        margin-left: -50%;
         top: 20px;
         width: 12em ; 
         height: 6em;
@@ -96,7 +96,7 @@
         background-position:  center;
         background-size: 40px; 
         top: 230px;
-        margin-left: -380px;
+        margin-left: -490px;
         padding: 0.45em;
         border-radius: 4px;
         border: none;
@@ -112,7 +112,7 @@
     .div-croc {
         display:none;
         position: absolute;
-        top: 190px;
+        top: 170px;
         margin-left: 420px;
         text-align: justify;     
         padding: 0.45em;
@@ -132,7 +132,7 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 145px;
+        top: 125px;
         margin-right: -410px;
         display:none;
         padding: 0.45em;
@@ -154,7 +154,7 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 190px; 
-        margin-left: -30%;
+        margin-left: -50%;
         top: 20px;
         width: 10em !important; 
         height: 9em;
@@ -173,14 +173,14 @@
         background-position: 10% 40%; 
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
-        background-size: 40px; 
+        background-size: 35px; 
         top: 230px;
-        margin-left: -370px;
+        margin-left: -490px;
         padding: 0.45em;
         border-radius: 4px;
         border: none;
         width: 3em;
-        height: 4em;
+        height: 3em;
         transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
     }
 
@@ -191,7 +191,7 @@
     .div-golfi {
         display: none;
         position: absolute;
-        top: 160px;
+        top: 140px;
         margin-left: 420px;
         text-align: justify;     
         padding: 0.45em;
@@ -211,7 +211,7 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 115px;
+        top: 95px;
         margin-right: -410px;
         display: none;
         padding: 0.45em;
@@ -234,7 +234,7 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 190px; 
-        margin-left: -30%;
+        margin-left: -50%;
         top: 20px;
         width: 10em !important; 
         height: 11em;
@@ -255,7 +255,7 @@
         background-position:  center;
         background-size: 40px; 
         top: 230px;
-        margin-left: -340px;
+        margin-left: -490px;
         padding: 0.45em;
         border-radius: 4px;
         border: none;
@@ -268,14 +268,14 @@
         transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
     }
     .div-snake {
-        display: none;
+        display: block;
         position: absolute;
-        top: 160px;
+        top: 150px;
         margin-left: 420px;
         text-align: justify;     
         padding: 0.45em;
         border-radius: 4px;
-        border: none;
+        border: block;
         background: rgb(17, 149, 182);
         color: rgb(245, 245, 245);
         width: 13em;
@@ -290,9 +290,9 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 115px;
+        top: 105px;
         margin-right: -410px;
-        display: none;
+        display: block;
         padding: 0.45em;
         border-radius: 4px;
         border: none;
@@ -313,7 +313,7 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 190px; 
-        margin-left: -30%;
+        margin-left: -50%;
         top: 20px;
         width: 10em !important; 
         border: none;
@@ -334,7 +334,7 @@
         background-position:  center;
         background-size: 40px; 
         top: 230px;
-        margin-left: -340px;
+        margin-left: -490px;
         padding: 0.45em;
         border-radius: 4px;
         border: none;
@@ -478,7 +478,7 @@
     .div-croc {
         display: none;
         position: absolute;
-        top: 420px;
+        top: 390px;
         margin-left: 170px;
         text-align: justify;     
         padding: 0.45em;
@@ -498,12 +498,12 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 70px; 
-        top: 375px;
+        top: 345px;
         margin-left: 170px;
         display: none;
         padding: 0.45em;
         border-radius: 4px;
-        border: block;
+        border: none;
         width: 4em;
         height: 3em;
         transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
@@ -548,7 +548,7 @@
         border-radius: 4px;
         border:none;
         width: 4em;
-        height: 3em;
+        height: 4em;
         transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
     }
 
@@ -706,7 +706,7 @@
         border-radius: 4px;
         border: none;
         width: 3em;
-        height: 3em;
+        height: 4em;
         transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
     }
     .input-panter:active {
