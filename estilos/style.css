@@ -420,8 +420,8 @@
     .div-croc {
         display: none;
         position: absolute;
-        top: 450px;
-        margin-left: 190px;
+        top: 420px;
+        margin-left: 170px;
         text-align: justify;     
         padding: 0.45em;
         border-radius: 4px;
@@ -440,8 +440,8 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 70px; 
-        top: 405px;
-        margin-left: 190px;
+        top: 375px;
+        margin-left: 170px;
         display: none;
         padding: 0.45em;
         border-radius: 4px;
@@ -490,7 +490,7 @@
         border-radius: 4px;
         border:none;
         width: 4em;
-        height: 4.5em;
+        height: 3em;
         transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
     }
 
@@ -500,8 +500,8 @@
     .div-golfi {
         display: none;
         position: absolute;
-        top: 450px;
-        margin-left: 150px;
+        top: 410px;
+        margin-left: 85px;
         text-align: justify;     
         padding: 0.45em;
         border-radius: 4px;
@@ -520,8 +520,8 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 405px;
-        margin-left: 150px;
+        top: 365px;
+        margin-left: 80px;
         display:none;
         padding: 0.45em;
         border-radius: 4px;
@@ -581,7 +581,7 @@
         display: none;
         position: absolute;
         top: 450px;
-        margin-left: 150px;
+        margin-left: 90px;
         text-align: justify;     
         padding: 0.45em;
         border-radius: 4px;
@@ -601,7 +601,7 @@
         background-position:  center;
         background-size: 60px; 
         top: 405px;
-        margin-left: 160px;
+        margin-left: 90px;
         display: none;
         padding: 0.45em;
         border-radius: 4px;
@@ -648,7 +648,7 @@
         border-radius: 4px;
         border: none;
         width: 3em;
-        height: 4em;
+        height: 3em;
         transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
     }
     .input-panter:active {
@@ -658,8 +658,8 @@
     .div-panter {
         display: none;
         position: absolute;
-        top: 440px;
-        margin-left: 150px;
+        top: 430px;
+        margin-left: 90px;
         text-align: justify;     
         padding: 0.45em;
         border-radius: 4px;
@@ -678,8 +678,8 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 390px;
-        margin-left: 160px;
+        top: 380px;
+        margin-left: 90px;
         display: none;
         padding: 0.45em;
         border-radius: 4px;

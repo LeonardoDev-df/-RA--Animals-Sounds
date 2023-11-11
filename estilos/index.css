@@ -156,6 +156,12 @@ span {
     .button:hover {
         background-color: #0056b3;
     }
+
+    .copy{
+        color: #fff !important;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
 }
 
 
@@ -185,6 +191,12 @@ span {
         margin-bottom: 0px;   
         font-family: 'Comic Sans MS', cursive ;
     }
+
+    .copy{
+        color: #fff !important;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
 
     .text-font, p {
         color: #666;
@@ -250,6 +262,12 @@ span {
         flex-direction: column;
         line-height: 1.6; /* Ajuste o espaçamento entre linhas conforme necessário */
     }
+
+    .copy{
+        color: #fff !important;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
 
     .container {
         max-width: 690px !important;
