@@ -85,7 +85,7 @@ span {
 /* Estilos para telas menores (modo retrato) */
 @media (max-width: 768px) {
     .container {        
-        padding: 78.03px;
+        padding: 68.03px;
         margin-top: 108px;
 
     }
@@ -99,23 +99,23 @@ span {
 
     .text-font, h1{  
         color: #007bff ;
-        font-size: 20px ;
+        font-size: 23px ;
         margin-bottom: 0px;   
-        font-family: 'Comic Sans MS', cursive ;
+      
     }
 
     .text-font, p {
         color: #666;
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 0px;
-        font-family: 'Comic Sans MS', cursive !important
+       
     }
 
     .footer {
         background-color: #333;
         color: #fff;
         
-        margin-top: 174px !important;
+        margin-top: 231px !important;
     }
 
     /* Estilos para o link de download à direita */
