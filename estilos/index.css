@@ -159,7 +159,7 @@ span {
 
     .copy{
         color: #fff !important;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, sans-serif !important;
     }
 
 }
@@ -194,9 +194,8 @@ span {
 
     .copy{
         color: #fff !important;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, sans-serif !important;
     }
-
 
     .text-font, p {
         color: #666;
