@@ -85,8 +85,8 @@ span {
 /* Estilos para telas menores (modo retrato) */
 @media (max-width: 768px) {
     .container {        
-        padding: 68.03px;
-        margin-top: 108px;
+        padding: 8.03px;
+        margin-top: 238px;
 
     }
 
@@ -114,8 +114,7 @@ span {
     .footer {
         background-color: #333;
         color: #fff;
-        
-        margin-top: 231px !important;
+        margin-top: 248px !important;
     }
 
     /* Estilos para o link de download à direita */
@@ -173,23 +172,19 @@ span {
         padding: 111px ;
         box-sizing: border-box;
         margin-top: -70px;
-        padding: 78px ;
+        padding: 66px ;
        
         margin: 0 auto; /* Centraliza o container na tela */
     }
 
-    .footer-container{
-        padding: 5px ;
-        max-width: 970px ;
-        margin: 0 auto; /* Centraliza o container na tela */
-    }
+  
     
 
     .text-font, h1{  
         color: #007bff ;
         font-size: 20px ;
         margin-bottom: 0px;   
-        font-family: 'Comic Sans MS', cursive ;
+       
     }
 
     .copy{
@@ -201,14 +196,14 @@ span {
         color: #666;
         font-size: 14px;
         margin-bottom: 0px;
-        font-family: 'Comic Sans MS', cursive;
+      
     }
 
     .footer {
         background-color: #333;
         color: #fff;
         
-        margin-top: 13px !important;
+        margin-top: 26px !important;
     }
 
     /* Estilos para o link de download à direita */
