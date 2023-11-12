@@ -45,6 +45,10 @@ AFRAME.registerComponent("markerhandler", {
                     console.log('Fala concluída');
                 };
 
+                const soundEl = document.getElementById("kro-sound");
+            
+                soundEl.pause();
+
                 // Converte o texto em áudio e exibe o áudio no elemento de áudio
                 const blobUrl = URL.createObjectURL(new Blob([textoParaFalar], { type: 'audio/wav' }));
                 audio.src = blobUrl;
@@ -71,6 +75,10 @@ AFRAME.registerComponent("markerhandler", {
                 utterance.onend = function() {
                     console.log('Fala concluída');
                 };
+
+                const soundEl = document.getElementById("snake-sound");
+            
+                soundEl.pause();
 
                 // Converte o texto em áudio e exibe o áudio no elemento de áudio
                 const blobUrl = URL.createObjectURL(new Blob([textoParaFalar], { type: 'audio/wav' }));
@@ -99,6 +107,10 @@ AFRAME.registerComponent("markerhandler", {
                     console.log('Fala concluída');
                 };
 
+                const soundEl = document.getElementById("golfi-sound");
+            
+                soundEl.pause();
+
                 // Converte o texto em áudio e exibe o áudio no elemento de áudio
                 const blobUrl = URL.createObjectURL(new Blob([textoParaFalar], { type: 'audio/wav' }));
                 audio.src = blobUrl;
@@ -125,6 +137,10 @@ AFRAME.registerComponent("markerhandler", {
                 utterance.onend = function() {
                     console.log('Fala concluída');
                 };
+
+                const soundEl = document.getElementById("panter-sound");
+            
+                soundEl.pause();
 
                 // Converte o texto em áudio e exibe o áudio no elemento de áudio
                 const blobUrl = URL.createObjectURL(new Blob([textoParaFalar], { type: 'audio/wav' }));
@@ -252,16 +268,20 @@ AFRAME.registerComponent("markerhandler", {
         
         // Evento de clique no botão do Crocodilo
         botaoCrocodilo.addEventListener("click", function () {
-           
+            window.speechSynthesis.pause();
+            console.log('Fala pausada');
             const soundEl = document.getElementById("kro-sound");
             if (soundEl) {
                 soundEl.play();
             }
+
+          
         });
 
          // Evento de clique no botão do Cobra
          botaoCobra.addEventListener("click", function () {
-           
+            window.speechSynthesis.pause();
+            console.log('Fala pausada');
             const soundEl = document.getElementById("snake-sound");
             if (soundEl) {
                 soundEl.play();
@@ -270,7 +290,8 @@ AFRAME.registerComponent("markerhandler", {
 
         // Evento de clique no botão do Gato
         botaoGolfi.addEventListener("click", function () {
-       
+            window.speechSynthesis.pause();
+            console.log('Fala pausada');
             const soundEl = document.getElementById("golfi-sound");
             if (soundEl) {
                 soundEl.play();
@@ -279,11 +300,14 @@ AFRAME.registerComponent("markerhandler", {
 
         // Evento de clique no botão do Gato
         botaoPanter.addEventListener("click", function () {
-          
+            window.speechSynthesis.pause();
+            console.log('Fala pausada');
             const soundEl = document.getElementById("panter-sound");
             if (soundEl) {
                 soundEl.play();
             }
+
+           
         });
     },
 });
