@@ -112,7 +112,7 @@
     .div-croc {
         display:none;
         position: absolute;
-        top: 170px;
+        top: 120px;
         margin-left: 420px;
         text-align: justify;     
         padding: 0.45em;
@@ -132,8 +132,8 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 125px;
-        margin-right: -410px;
+        top: 75px;
+        margin-right: -250px;
         display:none;
         padding: 0.45em;
         border-radius: 4px;
@@ -157,7 +157,7 @@
         margin-left: -50%;
         top: 20px;
         width: 10em !important; 
-        height: 9em;
+        height: 10em;
         border: none;
         border-radius: 9px;
         transition: transform 0.3s; /* Adiciona um efeito de transição suave para a transformação */
@@ -191,7 +191,7 @@
     .div-golfi {
         display: none;
         position: absolute;
-        top: 140px;
+        top: 110px;
         margin-left: 420px;
         text-align: justify;     
         padding: 0.45em;
@@ -211,8 +211,8 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 95px;
-        margin-right: -410px;
+        top: 65px;
+        margin-right: -250px;
         display: none;
         padding: 0.45em;
         border-radius: 4px;
@@ -268,14 +268,14 @@
         transform: scale(0.65); /* Diminui um pouco o tamanho quando o botão é clicado */
     }
     .div-snake {
-        display: block;
+        display: none;
         position: absolute;
-        top: 150px;
+        top: 130px;
         margin-left: 420px;
         text-align: justify;     
         padding: 0.45em;
         border-radius: 4px;
-        border: block;
+        border: none;
         background: rgb(17, 149, 182);
         color: rgb(245, 245, 245);
         width: 13em;
@@ -290,9 +290,9 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 105px;
-        margin-right: -410px;
-        display: block;
+        top: 85px;
+        margin-right: -250px;
+        display: none;
         padding: 0.45em;
         border-radius: 4px;
         border: none;
@@ -349,7 +349,7 @@
     .div-panter {
         display: none;
         position: absolute;
-        top: 150px;
+        top: 125px;
         margin-left: 450px;
         text-align: justify;     
         padding: 0.45em;
@@ -369,8 +369,8 @@
         background-repeat: no-repeat, repeat-x;
         background-position:  center;
         background-size: 60px; 
-        top: 105px;
-        margin-right: -440px;
+        top: 80px;
+        margin-right: -280px;
         display: none;
         padding: 0.45em;
         border-radius: 4px;
