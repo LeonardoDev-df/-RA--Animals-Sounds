@@ -195,6 +195,7 @@ AFRAME.registerComponent("markerhandler", {
             botaoConverterSnake.style.display = "none";
             botaoConverterPanter.style.display = "none";
             botaoConverterGolfin.style.display = "none";
+            botaoPesquisa.style.display = "none";
             inputCroc.style.display = "none";
             divCroc.style.display = "none";
             const soundEl = document.getElementById("kro-sound");
@@ -214,6 +215,7 @@ AFRAME.registerComponent("markerhandler", {
             // Marcador do Cachorro perdido, ocultar o botão do Cachorro
             botaoCobra.style.display = "none";
             inputSnake.style.display = "none";
+            botaoPesquisa.style.display = "none";
             botaoConverterSnake.style.display = "none";
             botaoConverterCroc.style.display = "none";
             botaoConverterPanter.style.display = "none";
@@ -229,6 +231,7 @@ AFRAME.registerComponent("markerhandler", {
             // Marcador do Cobra detectado, exibir o botão do Cobra
             botaoGolfi.style.display = "block";
             inputGolfi.style.display = "block";
+         
             botaoPanter.style.display = "none"; // Ocultar o botão do Cachorro
             botaoCobra.style.display = "none";// Ocultar o botão do Cachorro
             botaoCrocodilo.style.display = "none"; // Ocultar o botão do Crocodilo
@@ -238,6 +241,7 @@ AFRAME.registerComponent("markerhandler", {
             // Marcador do Cachorro perdido, ocultar o botão do Cachorro
             botaoGolfi.style.display = "none";
             inputGolfi.style.display = "none";
+            botaoPesquisa.style.display = "none";
             botaoConverterGolfin.style.display = "none";
             divGolfi.style.display = "none";
             const soundEl = document.getElementById("golfi-sound");
@@ -259,6 +263,7 @@ AFRAME.registerComponent("markerhandler", {
             // Marcador da Pantera Negra perdido, ocultar o botão do Pantera
             botaoPanter.style.display = "none";
             inputPanter.style.display = "none";
+            botaoPesquisa.style.display = "none";
             botaoConverterPanter.style.display = "none";
             divPanter.style.display = "none";
             const soundEl = document.getElementById("panter-sound");
