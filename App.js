@@ -9,6 +9,7 @@ AFRAME.registerComponent("markerhandler", {
 
         //botão
         document.getElementById("botao-sair").addEventListener("click", redirecionarPagina);
+        const botaoPesquisa= document.getElementById("botao-pesquisa");
         const botaoCrocodilo = document.getElementById("botao-crocodilo");
         const botaoCobra = document.getElementById("botao-cobra");
         const botaoGolfi = document.getElementById("botao-golfi");
@@ -265,9 +266,13 @@ AFRAME.registerComponent("markerhandler", {
             soundEl.pause();
         });
 
+
+        let contagemCliques = 0;
         
         // Evento de clique no botão do Crocodilo
         botaoCrocodilo.addEventListener("click", function () {
+            contagemCliques++;
+
             window.speechSynthesis.pause();
             console.log('Fala pausada');
             const soundEl = document.getElementById("kro-sound");
@@ -275,31 +280,75 @@ AFRAME.registerComponent("markerhandler", {
                 soundEl.play();
             }
 
+                    // Verifica se o botão foi clicado duas vezes
+            if (contagemCliques === 2) {
+                // Exibe o botão de pesquisa
+                botaoPesquisa.style.display = "block";
+            }
+
+            // Reinicia a contagem quando o botão de pesquisa é clicado
+            botaoPesquisa.addEventListener("click", function() {
+                contagemCliques = 0;
+                botaoPesquisa.style.display = "none";
+                // Redireciona para o formulário de pesquisa (substitua 'URL_DO_FORMULARIO' pelo URL correto)
+                 window.location.href = 'https://forms.gle/CzRUbVvhceEniY7s9';
+            });
           
         });
 
          // Evento de clique no botão do Cobra
          botaoCobra.addEventListener("click", function () {
+            contagemCliques++;
             window.speechSynthesis.pause();
             console.log('Fala pausada');
             const soundEl = document.getElementById("snake-sound");
             if (soundEl) {
                 soundEl.play();
             }
+
+                   // Verifica se o botão foi clicado duas vezes
+                   if (contagemCliques === 2) {
+                    // Exibe o botão de pesquisa
+                    botaoPesquisa.style.display = "block";
+                }
+    
+                // Reinicia a contagem quando o botão de pesquisa é clicado
+                botaoPesquisa.addEventListener("click", function() {
+                    contagemCliques = 0;
+                    botaoPesquisa.style.display = "none";
+                    // Redireciona para o formulário de pesquisa (substitua 'URL_DO_FORMULARIO' pelo URL correto)
+                     window.location.href = 'https://forms.gle/CzRUbVvhceEniY7s9';
+                });
         });
 
         // Evento de clique no botão do Gato
         botaoGolfi.addEventListener("click", function () {
+            contagemCliques++;
             window.speechSynthesis.pause();
             console.log('Fala pausada');
             const soundEl = document.getElementById("golfi-sound");
             if (soundEl) {
                 soundEl.play();
             }
+
+                   // Verifica se o botão foi clicado duas vezes
+                   if (contagemCliques === 2) {
+                    // Exibe o botão de pesquisa
+                    botaoPesquisa.style.display = "block";
+                }
+    
+                // Reinicia a contagem quando o botão de pesquisa é clicado
+                botaoPesquisa.addEventListener("click", function() {
+                    contagemCliques = 0;
+                    botaoPesquisa.style.display = "none";
+                    // Redireciona para o formulário de pesquisa (substitua 'URL_DO_FORMULARIO' pelo URL correto)
+                     window.location.href = 'https://forms.gle/CzRUbVvhceEniY7s9';
+                });
         });
 
         // Evento de clique no botão do Gato
         botaoPanter.addEventListener("click", function () {
+            contagemCliques++;
             window.speechSynthesis.pause();
             console.log('Fala pausada');
             const soundEl = document.getElementById("panter-sound");
@@ -307,6 +356,19 @@ AFRAME.registerComponent("markerhandler", {
                 soundEl.play();
             }
 
+                   // Verifica se o botão foi clicado duas vezes
+                   if (contagemCliques === 2) {
+                    // Exibe o botão de pesquisa
+                    botaoPesquisa.style.display = "block";
+                }
+    
+                // Reinicia a contagem quando o botão de pesquisa é clicado
+                botaoPesquisa.addEventListener("click", function() {
+                    contagemCliques = 0;
+                    botaoPesquisa.style.display = "none";
+                    // Redireciona para o formulário de pesquisa (substitua 'URL_DO_FORMULARIO' pelo URL correto)
+                     window.location.href = 'https://forms.gle/CzRUbVvhceEniY7s9';
+                });
            
         });
     },

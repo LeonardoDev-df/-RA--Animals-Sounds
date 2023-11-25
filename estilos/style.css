@@ -11,6 +11,25 @@
     top: 5%;
 }
 
+.pesquisa{
+    position: fixed;
+   /* background-image:url("../images/botão-voltar.png");   */
+    background-repeat: no-repeat, repeat-x;
+    background-position:  center;
+    background-size: 105px; 
+    top: 250px;
+    margin-left: -10%;
+    display: none;
+    border-radius: 10px;
+    border-color: blueviolet;
+    color: black;
+    border: 1px solid;
+    font-weight: bold;
+    cursor: pointer;
+    width: 16em;
+    height: 10em;
+}
+
 
 .sair {
     position: fixed;
@@ -51,7 +70,24 @@
         height: 2em;
     }
 
-   
+    .pesquisa{
+        position: fixed;
+       /* background-image:url("../images/botão-voltar.png");   */
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 105px; 
+        top: 250px;
+        margin-left: -10%;
+        display: none;
+        border-radius: 10px;
+        border-color: blueviolet;
+        color: black;
+        border: 1px solid;
+        font-weight: bold;
+        cursor: pointer;
+        width: 16em;
+        height: 10em;
+    }
 
     .sair {
         display: block;
@@ -68,7 +104,7 @@
     }
 
     #botao-crocodilo{
-        display:none;
+        display: block;
         background-image:url("../images/Croc.jpg");
         background-image: 30px;
         background-position: 10% 40%; 
@@ -410,6 +446,25 @@
         border: none;
         width: 10em;
         height: 3em;
+    }
+
+    .pesquisa{
+        position: fixed;
+       /* background-image:url("../images/botão-voltar.png");   */
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 105px; 
+        top: 250px;
+        margin-left: -10%;
+        display: none;
+        border-radius: 10px;
+        border-color: blueviolet;
+        color: black;
+        border: 1px solid;
+        font-weight: bold;
+        cursor: pointer;
+        width: 16em;
+        height: 10em;
     }
 
     .doubt {
@@ -774,6 +829,25 @@
         border: none;
         width: 110em;
         height: 13em;
+    }
+
+    .pesquisa{
+        position: fixed;
+       /* background-image:url("../images/botão-voltar.png");   */
+        background-repeat: no-repeat, repeat-x;
+        background-position:  center;
+        background-size: 105px; 
+        top: 250px;
+        margin-left: -10%;
+        display: none;
+        border-radius: 10px;
+        border-color: blueviolet;
+        color: black;
+        border: 1px solid;
+        font-weight: bold;
+        cursor: pointer;
+        width: 16em;
+        height: 10em;
     }
 
     .doubt {
