@@ -280,12 +280,12 @@ span {
     }
 
     .container {
-        max-width: 670px !important;
+        max-width: 770px !important;
         margin: 0 auto;
         padding: 111px ;
         box-sizing: border-box;
-        margin-top: -70px;
-        padding: 78px ;
+        margin-top: 50px !important;
+        padding: 18px  !important;
        
         margin: 0 auto; /* Centraliza o container na tela */
     }
