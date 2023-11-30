@@ -438,3 +438,77 @@ span {
         background-color: #0056b3;
     }
 }
+
+/* Estilos para telas menores (modo retrato) */
+@media (min-width: 914px) or (max-height: 412px)  {
+    .container {
+        max-width: 920px ;
+        padding: 111px ;
+        box-sizing: border-box;
+        margin-top: 12% !important;
+        padding: 56px ; 
+        margin: 0 auto; /* Centraliza o container na tela */
+    }
+
+    .text-font, h1{  
+        color: #007bff ;
+        font-size: 20px ;
+        margin-bottom: 0px;         
+    }
+
+    .copy{
+        color: #fff !important;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+
+    .text-font, p {
+        color: #666;
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+
+    .footer {
+        background-color: #333;
+        color: #fff;
+
+    }
+
+    /* Estilos para o link de download à direita */
+    .footer-content a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+        font-size: 14px !important;
+       
+    }
+
+    .footer-content a:hover {
+        color: #007bff;
+    }
+
+    .instruction-link {
+        color: #007bff; /* Cor do link */
+        text-decoration: none; /* Remova a sublinhado padrão */
+        font-weight: bold; /* Torne o texto em negrito */
+        transition: color 0.3s ease; /* Efeito de transição de cor suave */
+    }
+    
+    .instruction-link:hover {
+        color: #0056b3; /* Cor diferente ao passar o mouse sobre o link */
+    }
+    
+    .button {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #007BFF;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+     
+    }
+    
+    .button:hover {
+        background-color: #0056b3;
+    }
+}
