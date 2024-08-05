@@ -286,10 +286,10 @@ AFRAME.registerComponent("markerhandler", {
             }
 
                     // Verifica se o botão foi clicado duas vezes
-            if (contagemCliques === 2) {
-                // Exibe o botão de pesquisa
-                botaoPesquisa.style.display = "block";
-            }
+          //  if (contagemCliques === 2) {
+           //     // Exibe o botão de pesquisa
+          //      botaoPesquisa.style.display = "block";
+         //   }
 
             // Reinicia a contagem quando o botão de pesquisa é clicado
             botaoPesquisa.addEventListener("click", function() {
@@ -312,10 +312,10 @@ AFRAME.registerComponent("markerhandler", {
             }
 
                    // Verifica se o botão foi clicado duas vezes
-                   if (contagemCliques === 2) {
+              //     if (contagemCliques === 2) {
                     // Exibe o botão de pesquisa
-                    botaoPesquisa.style.display = "block";
-                }
+               //     botaoPesquisa.style.display = "block";
+              //  }
     
                 // Reinicia a contagem quando o botão de pesquisa é clicado
                 botaoPesquisa.addEventListener("click", function() {
@@ -337,10 +337,10 @@ AFRAME.registerComponent("markerhandler", {
             }
 
                    // Verifica se o botão foi clicado duas vezes
-                   if (contagemCliques === 2) {
+             //      if (contagemCliques === 2) {
                     // Exibe o botão de pesquisa
-                    botaoPesquisa.style.display = "block";
-                }
+                 //   botaoPesquisa.style.display = "block";
+              //  }
     
                 // Reinicia a contagem quando o botão de pesquisa é clicado
                 botaoPesquisa.addEventListener("click", function() {
@@ -362,10 +362,10 @@ AFRAME.registerComponent("markerhandler", {
             }
 
                    // Verifica se o botão foi clicado duas vezes
-                   if (contagemCliques === 2) {
+              //     if (contagemCliques === 2) {
                     // Exibe o botão de pesquisa
-                    botaoPesquisa.style.display = "block";
-                }
+           //         botaoPesquisa.style.display = "block";
+           //     }
     
                 // Reinicia a contagem quando o botão de pesquisa é clicado
                 botaoPesquisa.addEventListener("click", function() {
